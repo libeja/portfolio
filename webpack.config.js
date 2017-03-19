@@ -16,11 +16,15 @@ module.exports = {
         use: 'babel-loader'
       },
       {
-        use: ExtractTextPlugin.extract({
-          use: 'css-loader'
-        }),
-        test: /\.css$/
+        test: /\.scss$/,
+        use: ExtractTextPlugin.extract('css-loader!sass-loader')
       }
+      // {
+      //   use: ExtractTextPlugin.extract({
+      //     use: 'css-loader'
+      //   }),
+      //   test: /\.css$/
+      // }
     ]
   },
   plugins: [
@@ -29,5 +33,4 @@ module.exports = {
     }),
     new ExtractTextPlugin('styles.css')
   ]
-
 };
