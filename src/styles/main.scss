@@ -1,5 +1,24 @@
+@import 'variables';
+
 body {
+  background-color: $background-color;
+}
+div {
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+// prevent image overflowing containers
+img {
+  max-width: 100%
+}
+
+// larger screen styles
+@media screen and (min-width: 500px) {
   div {
-    color: blue;
+    color: pink;
   }
 }

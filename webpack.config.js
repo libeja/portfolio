@@ -18,13 +18,17 @@ module.exports = {
       {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract('css-loader!sass-loader')
-      }
+      },
       // {
-      //   use: ExtractTextPlugin.extract({
-      //     use: 'css-loader'
-      //   }),
-      //   test: /\.css$/
-      // }
+      //   test: /\.(jpg|gif)$/,
+      //   use: 'url-loader',
+      //   include: './src/assets'
+      // },
+      {
+        test: /\.(jpg|gif)$/,
+        use: 'file-loader',
+        include: path.join(__dirname, 'src/assets')
+      }
     ]
   },
   plugins: [

@@ -1,0 +1,40 @@
+.main-nav {
+  position: absolute;
+	height: 50px;
+	text-align: right;
+	width: 100%;
+	background-color: rgba(128, 128, 128, .85);
+	margin: 0;
+	top: 0;
+	left: 0;
+	box-shadow: 0 3px 5px black;
+	z-index: 999;
+
+  li {
+  position: relative;
+  top: 0;
+	display: inline-block;
+	color: #fff;
+	padding: 10px;
+	text-transform: uppercase;
+  cursor: pointer;
+  transition: top .2s ease-in;
+  }
+
+  li:hover {
+  border-bottom: 2px solid #fff;  
+  padding-bottom: 2px;
+  
+  top: -3px;
+
+}
+
+}
+
+/*
+#main-nav li:hover {
+	background-color: #fff;
+	color: #000;
+}
+*/
+
