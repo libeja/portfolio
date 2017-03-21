@@ -1,0 +1,17 @@
+.project-container {
+  width: 150px;
+  height: 150px;
+}
+
+.project {
+  border: 2px solid #32fffe;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  transition: all .2s cubic-bezier(.6, 2, .9, 1);
+  
+  &:hover {
+    transform: scale(1.2);
+  }
+}
