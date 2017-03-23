@@ -7,19 +7,22 @@
 	height: 50px;
 	text-align: right;
 	width: 100%;
-	max-width: $maxPageWidth;
+	// max-width: $maxPageWidth;
 	background-color: rgba(128, 128, 128, .85);
-	margin: 0;
+	margin: 0 auto;
 	top: 0;
 	right: 0;
 	box-shadow: 0 3px 5px black;
 	z-index: 100;
 
   li {
+	text-align: center;
 	display: none;
 	color: #fff;
 	padding: 12px;
 	padding-left: 0;
+	padding-right: 0;
+	margin-right: 10px;
 	text-transform: uppercase;
   cursor: pointer;
 	border: 0;
@@ -48,19 +51,21 @@
 	background: #333;
 	color: #fff;
 	z-index: 200;
+	padding-top: 50px;
 
 	li {
-		padding: 10px;
-		text-align: center;
+		padding-left: 40px;
+		margin-bottom: 30px;
+		text-align: left;
 		list-style-type: none;
 		cursor: pointer;
+		transition: margin .2s ease-in-out;
 
 		&:hover {
 			text-decoration: underline;
+			margin-left: 5px;
 		}
 	}
-
-	
 }
 
 .hamburger-icon {
@@ -69,7 +74,6 @@
 		right: 10px;
 		z-index: 200;
 		transition: $cubic-bezier;
-		
 	}
 
 // for sidebar
@@ -82,11 +86,14 @@
 	right: 150px;
 }
 
+// Headroom.js styles
 .headroom {
+	position: relative;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
+	margin: 0 auto;
 }
 
 .headroom--unfixed {
@@ -95,12 +102,13 @@
 }
 
 .headroom--scrolled {
+	position: relative;
   transition: transform 200ms ease-in-out;
 }
 
 .headroom--unpinned {
   position: fixed;
-  transform: translateY(-100%);
+  transform: translateY(-110%);
 }
 .headroom--pinned {
   position: fixed;
@@ -118,5 +126,15 @@
 	.wide-nav li {
 		display: inline-block;
 	}
-	
 }
+// when over 960px
+@media (min-width: 960px) {
+	.wide-nav {
+		display: inline-block;
+		text-align: center;
+		li {
+			margin-right: 100px;
+		}
+	}
+}
+

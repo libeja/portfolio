@@ -11,10 +11,14 @@ body {
   background-color: $background-color;
   font-family: 'Ubuntu', sans-serif;
   text-align: center;
-  // hides the offscreen navigation
-  max-width: $maxPageWidth;
   margin: 0 auto;
 }
+
+// .wrapper {
+//   max-width: $maxPageWidth;
+//   margin: 0 auto;
+//   padding: 0;
+// }
 
 a {
   padding: 0;
