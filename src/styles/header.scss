@@ -1,13 +1,14 @@
 @import 'variables';
 
 .header {
-  height: 500px;
-  min-width: 500px;
-  max-width: 960px;
+  height: 250px;
+  color: #fff;
+  padding: 0;
 
   h1 {
     padding-top: 80px;
     padding-left: 20px;
+    margin-bottom: 15px;
   }
 
 
@@ -18,7 +19,7 @@
     letter-spacing: .3em;
   }
   background-color: #293f50;
-  background: url('../assets/hills.jpg') no-repeat 80% fixed;
+  // background: url('../assets/hills.jpg') no-repeat 80% fixed;
   background-size: cover;
 }
 

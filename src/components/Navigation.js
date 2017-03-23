@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import '../styles/nav-bar.scss';
+import Headroom from 'react-headroom';
+import '../styles/navigation.scss';
 
 const navLinks = [
   <li key='about'>About</li>,
@@ -11,33 +12,53 @@ class NavBar extends Component {
   constructor() {
     super();
 
-    this.handleClick = this.handleClick.bind(this);
+    this.toggleSlide = this.toggleSlide.bind(this);
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+
+  // hide sidebar and menu icon when scrolling if sidebar is open
+  handleScroll() {
+    if (this.sideBar.className.indexOf('hidden') < 0 ) {
+      this.sideBar.classList.toggle('hidden');
+      this.hamburgerIcon.classList.toggle('slide');
+    }
   }
 
   // handles clicking on the hamburger icon
   // toggles whether drop down menu is visible
-  handleClick() {
+  toggleSlide() {
     console.log(this.sideBar);
     this.sideBar.classList.toggle('hidden');
+    this.hamburgerIcon.classList.toggle('slide');
   }
 
   render() {
     return (
+      <Headroom 
+        disableInlineStyles 
+        wrapperStyle={{border: '3px solid white'}}
+        onUnpin={this.handleScroll}
+      >
       <nav>
+       
         {/* Sidebar */}
+        
         <div 
           ref={(sideBar) => { this.sideBar = sideBar }} 
           className='sideBar hidden'
-          onClick={this.handleClick}
+          onClick={this.toggleSlide}
         >
-        <i 
-          className='fa fa-bars fa-2x'
-        ></i>
+        
           {navLinks}
         </div>
         
         {/* wide links */}
         <div className='wide-nav'>
+          <i 
+            className='hamburger-icon fa fa-bars fa-2x'
+            onClick={this.toggleSlide}
+            ref={(hamburgerIcon) => {this.hamburgerIcon = hamburgerIcon}}            
+          ></i>
           {navLinks}
         </div>
 
@@ -55,6 +76,7 @@ class NavBar extends Component {
         </nav>
         */}
       </nav>
+      </Headroom>
     );
   }
 }

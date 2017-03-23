@@ -2,12 +2,9 @@ import React from 'react';
 import Project from './Project';
 import '../styles/projects.scss';
 
-const projectList = [
-  {
-    name: 'Tic Tac Toe',
-    img: require('../assets/test.png')
-  }
-];
+// imports list of projects as array
+import projectList from '../projectList'
+
 
 const projectComponentList = projectList
   .map((project) => {
@@ -15,6 +12,9 @@ const projectComponentList = projectList
       key={project.name} 
       name={project.name} 
       img={project.img} 
+      techList={project.techList}
+      gitLink={project.gitLink}
+      liveLink={project.liveLink}
     />
   });
 
@@ -22,8 +22,12 @@ const Projects = () => {
 
   return (
     <section>
-      Projects
+      <h3>&#60; Projects /&#62;</h3>
+      <div className='initial-projects-container'>
       {projectComponentList}
+      </div>
+      
+      <span className='more-projects'><i className="fa fa-angle-double-down" aria-hidden="true"></i> Click for more projects</span>
     </section>
   );
 }

@@ -1,11 +1,14 @@
-// @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 $font-stack: Helvetia, sans-serif;
 $font-title: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 $background-color: #fff;
 
-$footer-color: #EEF7F6;
+$color-green: #EEF7F6;
 $about-color: #f7f7f7;
 
 $footer-link-color: #9778CA;
+
+$maxPageWidth: 960px;
+
+$cubic-bezier: all .2s cubic-bezier(.6, 2, .9, 1);

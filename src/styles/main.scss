@@ -1,31 +1,47 @@
 @import 'variables';
 
+// @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+html, body {
+  height: 100%
+}
+
 body {
   background-color: $background-color;
-  font-family: $font-title;
+  font-family: 'Ubuntu', sans-serif;
   text-align: center;
+  // hides the offscreen navigation
+  max-width: $maxPageWidth;
+  margin: 0 auto;
 }
 
-section {
-  margin-bottom: 30px;
+a {
+  padding: 0;
 }
 
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, {
   margin: 0;
-}
-
-p {
-  text-align: left;
+  font-family: $font-title;
 }
 
 h3 {
-	font-weight: 300;
+	font-weight: bold;
 	color: #000;
   text-transform: uppercase;
 	font-size: 20px;
 	letter-spacing: .5em;
 	font-variant: small-caps;
+  margin-bottom: 20px;
+}
+
+section {
+  padding: 30px 0;
+}
+
+p {
+  text-align: left;
 }
 
 // prevent image overflowing containers
@@ -36,6 +52,6 @@ img {
 // larger screen styles
 @media screen and (min-width: 500px) {
   div {
-    color: pink;
+    
   }
 }

@@ -1,0 +1,38 @@
+.initial-projects-container {
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 85%;
+  max-width: 960px;
+}
+
+.project-container {
+  width: 250px;
+  height: 300px;
+  margin: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.project {
+  border: 3px solid #000;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  transition: all .2s cubic-bezier(.6, 2, .9, 1);
+  margin: 0 auto;
+  
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.project-name {
+  font-size: 1.2em;
+}
+
+.more-projects {
+  display: inline-block;
+}

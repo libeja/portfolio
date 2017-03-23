@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import NavBar from './Nav-bar';
 import '../styles/header.scss';
 
 class Header extends Component {

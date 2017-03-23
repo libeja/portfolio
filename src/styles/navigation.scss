@@ -1,0 +1,122 @@
+@import 'variables';
+
+.wide-nav {
+	// display: none;
+  position: relative;
+	padding-top: 10px;
+	height: 50px;
+	text-align: right;
+	width: 100%;
+	max-width: $maxPageWidth;
+	background-color: rgba(128, 128, 128, .85);
+	margin: 0;
+	top: 0;
+	right: 0;
+	box-shadow: 0 3px 5px black;
+	z-index: 100;
+
+  li {
+	display: none;
+	color: #fff;
+	padding: 12px;
+	padding-left: 0;
+	text-transform: uppercase;
+  cursor: pointer;
+	border: 0;
+  transition: border .1s ease-in;
+  }
+
+  li:hover {
+  border-bottom: 5px solid #fff;  
+  padding-bottom: 2px;
+  
+  top: -3px;
+
+	}
+
+}
+
+
+.sideBar {
+	position: fixed;
+	transition: $cubic-bezier;
+	
+	top: 0;
+	right: -30px;
+	width: 170px;
+	height: 200vh;
+	background: #333;
+	color: #fff;
+	z-index: 200;
+
+	li {
+		padding: 10px;
+		text-align: center;
+		list-style-type: none;
+		cursor: pointer;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	
+}
+
+.hamburger-icon {
+		text-align: right;
+		position: relative;
+		right: 10px;
+		z-index: 200;
+		transition: $cubic-bezier;
+		
+	}
+
+// for sidebar
+.hidden {
+	transform: translateX(150px);
+}
+
+// for hamburger icon
+.slide {
+	right: 150px;
+}
+
+.headroom {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.headroom--unfixed {
+  position: relative;
+  transform: translateY(0);
+}
+
+.headroom--scrolled {
+  transition: transform 200ms ease-in-out;
+}
+
+.headroom--unpinned {
+  position: fixed;
+  transform: translateY(-100%);
+}
+.headroom--pinned {
+  position: fixed;
+  transform: translateY(0%);
+}
+
+// when over 480px
+@media (min-width: 480px) {
+	.sideBar {
+		display: none;
+	}
+	.hamburger-icon {
+		display: none;
+	}
+	.wide-nav li {
+		display: inline-block;
+	}
+	
+}
