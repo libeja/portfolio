@@ -34,7 +34,6 @@ class Header extends Component {
     window.onblur = () => {
       if (this.state.windowIsFocused) {
         stopClouds();
-        console.log('blur!');
         this.setState({ windowIsFocused: false })
       }      
     }
@@ -42,7 +41,6 @@ class Header extends Component {
     window.onfocus = () => {
       if (!this.state.windowIsFocused) {
         startClouds();
-      console.log('focus!');
       this.setState({ windowIsFocused: true })
       }
     }

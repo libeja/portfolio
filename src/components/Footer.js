@@ -1,11 +1,15 @@
 import React from 'react';
 import '../styles/footer.scss';
 
+import ScrollableAnchor from 'react-scrollable-anchor';
+
 const Footer = () => {
 
   return (
     <section className='footer'>
-      <h3 id='contact'>&#60; Find me /&#62;</h3>
+      <ScrollableAnchor id='contact'>
+        <h3>&#60; Find me /&#62;</h3>
+      </ScrollableAnchor>
       <div className="icons-container">
         <a href="https://github.com/libeja" target="_blank"><i className="fa fa-github-square fa-4x" aria-hidden="true"></i></a>
         <a href="https://www.freecodecamp.com/libeja" target="_blank"><i className="fa fa-free-code-camp fa-4x" aria-hidden="true"></i></a>

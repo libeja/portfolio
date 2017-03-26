@@ -5,6 +5,12 @@ import About from './About';
 import Projects from './Projects';
 import Footer from './Footer';
 
+// configures react-scrollable-anchor
+import { configureAnchors } from 'react-scrollable-anchor'
+configureAnchors({ offset: -65 })
+
+
+
 // import weather-icon fonts from:
 // https://erikflowers.github.io/weather-icons/
 import '../font/weather-icons.min.scss';

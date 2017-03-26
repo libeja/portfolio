@@ -1,10 +1,16 @@
 import React from 'react';
 import '../styles/about.scss';
 
+import ScrollableAnchor from 'react-scrollable-anchor';
+
+
 const About = () => {
   return (
     <section className='about'>
-      <h3 id='about'>&#60; About Me /&#62;</h3>
+      <ScrollableAnchor id='about'>
+        <h3>&#60; About Me /&#62;</h3>
+      </ScrollableAnchor>
+
       <p>
         Hi, my name is Jay. I develop web applications. I
         am looking for my first job in web development. 

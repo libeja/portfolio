@@ -32,6 +32,7 @@
   width: 200px;
   height: 200px;
   background-size: cover;
+  background-position: 50%;
   transition: all .2s cubic-bezier(.6, 2, .9, 1);
   margin: 0 auto;
   margin-bottom: 15px;
@@ -40,9 +41,26 @@
   &:hover {
     transform: scale(1.2);
     box-shadow: -6px 6px 20px #333;
-    
+    background-color: rgba(0, 0, 0, 0)
   }
 }
+
+// .project-more-info {
+//   position: absolute;
+//   border-radius: 20%;
+//   width: 100%;
+//   height: 100%;
+//   background-color: #444;
+//   visibility: hidden;
+//   opacity: 0;
+//   transition: all .5s;
+
+
+//   &:hover {
+//     visibility: visible;
+//     opacity: 1;
+//   }
+// }
 
 .project-links {
   margin-bottom: 5px;
@@ -110,11 +128,14 @@
   margin: 0 auto;
 }
 
+
+
+
 // react transition classes for animating more projects panel
 
-.test {
-  height: auto;
-}
+// .test {
+//   height: auto;
+// }
 
 .moreProjects-enter {
   opacity: 0.01;
@@ -135,6 +156,5 @@
 .moreProjects-leave.moreProjects-leave-active {
   opacity: 0.01;
   max-height: 0px;
-  transition: all 500ms;
+  transition: all 950ms;
 }
-

@@ -8,7 +8,8 @@ const Project = (props) => {
 
   return (
     <div className='project-container'>
-      <div className='project-name'>{props.name}</div>
+      <div className='project-name'>{props.name}
+      </div>
       <a href={props.liveLink} target='_blank'>
         <div style={{ backgroundImage: `url(${props.img})`}} className='project' />
       </a>

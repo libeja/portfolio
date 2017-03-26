@@ -53,6 +53,27 @@ img {
   max-width: 100%
 }
 
+button {
+  border: 0;
+  outline: 0;
+  padding: 5px;
+  box-shadow: -1px 1px 2px #000;
+  background-color: #f02467;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ensures hover styles are only applied to non-touch devices */
+@media (hover:hover) {
+  button:hover, button:active {
+
+    position: relative;
+    top: 1px;
+    right: 1px;
+    box-shadow: none;
+  }
+}
+
 // larger screen styles
 @media screen and (min-width: 500px) {
   div {
