@@ -3,7 +3,6 @@ import '../styles/about.scss';
 
 import ScrollableAnchor from 'react-scrollable-anchor';
 
-
 const About = () => {
   return (
     <section className='about'>

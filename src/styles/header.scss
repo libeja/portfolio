@@ -10,11 +10,11 @@
 
   .name-container {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -55%);
     border: 3px solid $color-green;
-    padding: 2em;
+    padding: 1.5em;
     border-radius: 30px;
     background-color: rgba(0, 0, 0, .8);
     z-index: 10;
@@ -47,26 +47,16 @@
 //   translateX(-50%);
 // }
 
-// cloud styles
 
-@keyframes myanimation {
-    0% { left: -200px }
-    100% { left: 120% }
-}
 
-.cloud {
-	position: absolute;
-  left: -200px;
+// small screen styles
+@media screen and (max-width: 500px) {
+  .name-container {
+    font-size: .75em;
+    padding: .75em;
 
-	/*animation: myanimation 8s linear;*/
-}
-.cloud:before {
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.05); /*fix for bug that left trails
-                                            as cloud moved across the screen*/
-
-  position: absolute;
-  font-family: weathericons;
-  top: 0;
-  left: 0;
-  content: "\f041";
+    h2 {
+      width: 260px;
+    }
+  }
 }

@@ -81,20 +81,6 @@ class NavBar extends Component {
           ></i>
           {navLinks}
         </div>
-
-        {/*
-        <nav className='main-nav'>
-          <i class="fa fa-bars fa-2x"></i>
-          <div className='wide-nav hidden'>
-            <div className='wide-div'>
-              <ul>
-                {navLinks}
-              </ul>
-            </div>
-          </div>
-        
-        </nav>
-        */}
       </nav>
       </Headroom>
     );

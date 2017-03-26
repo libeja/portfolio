@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/projects.scss';
 
-
 const Project = (props) => {
   const techList = props.techList;
   const techString = techList.join(' / ');

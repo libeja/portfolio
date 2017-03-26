@@ -25,7 +25,6 @@ const createList = (projectArray) => {
   );
 }
 
-
 class Projects extends Component {
   constructor(props) {
     super(props);
@@ -84,9 +83,6 @@ class Projects extends Component {
               : <span><i className="fa fa-angle-double-up" aria-hidden="true"></i>&nbsp;Show Less Projects</span>
             }
           </button>
-
-
-
         </ReactCSSTransitionGroup>
       </section>
     );

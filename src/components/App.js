@@ -9,8 +9,6 @@ import Footer from './Footer';
 import { configureAnchors } from 'react-scrollable-anchor'
 configureAnchors({ offset: -65 })
 
-
-
 // import weather-icon fonts from:
 // https://erikflowers.github.io/weather-icons/
 import '../font/weather-icons.min.scss';
