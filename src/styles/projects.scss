@@ -2,12 +2,15 @@
 
 // for div that contains list of projects
 .projects-container {
-  display: -webkit-inline-flex;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   width: 85%;
   max-width: 960px;
+  margin: 0 auto;
 
   .project-name {
     font-size: 1em;
@@ -39,6 +42,8 @@
   box-shadow: -3px 3px 10px #333;
   
   &:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
     transform: scale(1.2);
     box-shadow: -6px 6px 20px #333;
     background-color: rgba(0, 0, 0, 0)

@@ -85,6 +85,8 @@ nav {
 
 // for sidebar
 .hidden {
+	-webkit-transform: translateX(150px);
+	-ms-transform: translateX(150px);
 	transform: translateX(150px);
 }
 
@@ -105,6 +107,9 @@ nav {
 
 .headroom--unfixed {
   position: relative;
+	
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
   transform: translateY(0);
 }
 
@@ -115,10 +120,15 @@ nav {
 
 .headroom--unpinned {
   position: fixed;
+
+	-webkit-transform: translateY(-110%);
+	-ms-transform: translateY(-110%);
   transform: translateY(-110%);
 }
 .headroom--pinned {
   position: fixed;
+  -webkit-transform: translateY(0%);
+	-ms-transform: translateY(0%);
   transform: translateY(0%);
 }
 
