@@ -48,6 +48,26 @@
 // }
 
 
+// header animation
+
+.animate {
+  animation-duration: 5s;
+  animation-name: rockUpDown;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rockUpDown {
+  0% {
+    top: 38%;
+  }
+  50% {
+    top: 42%;
+  }
+  100% {
+    top: 38%;
+  }
+}
+
 
 // small screen styles
 @media screen and (max-width: 500px) {

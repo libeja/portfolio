@@ -14,7 +14,6 @@ class Header extends Component {
     };
 
     this.header;
-
   }
 
   componentDidMount() {
@@ -42,7 +41,7 @@ class Header extends Component {
       <section 
         ref={headerRef => {this.header = headerRef}}
         className='header'>
-        <div className="name-container">
+        <div className="name-container animate">
           <h1>jayUllman</h1>
           <h2 className='sub-title'>front-end engineer</h2>
         </div>
