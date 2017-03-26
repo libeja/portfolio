@@ -1,5 +1,12 @@
 @import 'variables';
 
+nav {
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
 .wide-nav {
 	// display: none;
   position: relative;

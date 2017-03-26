@@ -5,6 +5,9 @@ import About from './About';
 import Projects from './Projects';
 import Footer from './Footer';
 
+// import weather-icon fonts from:
+// https://erikflowers.github.io/weather-icons/
+import '../font/weather-icons.min.scss';
 
 class App extends Component {
   
