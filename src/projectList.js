@@ -5,12 +5,16 @@ export const showcaseProjects = [
   {
     name: 'Tic Tac Toe',
     img: require(assetsDirectory + 'tic-tac-toe.png'),
-    techList: ['html', 'css', 'javascript']
+    techList: ['html', 'css', 'javascript'],
+    gitLink: 'http://codepen.io/jugglnaut/pen/aBjBWZ',
+    liveLink: 'http://codepen.io/jugglnaut/full/aBjBWZ/'
   },
   {
     name: 'Dungeon Crawler',
     img: require(assetsDirectory + 'dungeon-crawler.png'),
-    techList: ['html', 'css', 'javascript', 'react']
+    techList: ['html', 'css', 'javascript', 'react'],
+    gitLink: 'https://github.com/libeja/dungeon-crawler',
+    liveLink: 'https://libeja.github.io/dungeon-crawler/'
   },
   {
     name: 'Chore Chart',
@@ -22,17 +26,23 @@ export const showcaseProjects = [
   {
     name: 'Game of Life',
     img: require(assetsDirectory + 'game-of-life.png'),
-    techList: ['html', 'css', 'javascript', 'react']
+    techList: ['html', 'css', 'javascript', 'react'],
+    gitLink: 'https://github.com/libeja/game-of-life',
+    liveLink: 'https://libeja.github.io/game-of-life/'
   },
   {
     name: 'Simon',
     img: require(assetsDirectory + 'simon.png'),
-    techList: ['html', 'css', 'javascript']
+    techList: ['html', 'css', 'javascript'],
+    gitLink: 'https://github.com/libeja/simon',
+    liveLink: 'https://libeja.github.io/simon/'
   },
   {
     name: 'JavaScript Calculator',
     img: require(assetsDirectory + 'js-calculator.png'),
-    techList: ['html', 'css', 'javascript', 'react']
+    techList: ['html', 'css', 'javascript', 'react'],
+    gitLink: 'https://github.com/libeja/JavaScript-Calculator',
+    liveLink: 'http://codepen.io/jugglnaut/full/zoqpKp/'
   },
 ];
 
@@ -41,14 +51,14 @@ export const moreProjects = [
   {
     name: 'Meteorite Landings with D3.js',
     img: require(assetsDirectory + 'meteorite-landings.png'),
-    techList: ['javascript', 'D3.js', 'Webpack\u00a02'],
+    techList: ['javascript', 'D3', 'Webpack\u00a02'],
     gitLink: 'https://github.com/libeja/d3-meteorite-landings',
     liveLink: 'https://libeja.github.io/d3-meteorite-landings/'
   },
   {
     name: 'Heatmap with D3.js',
     img: require(assetsDirectory + 'heat-map.png'),
-    techList: ['javascript', 'D3.js', 'Webpack\u00a022'],
+    techList: ['javascript', 'D3', 'Webpack\u00a022'],
     gitLink: 'https://github.com/libeja/d3-heat-map',
     liveLink: 'https://libeja.github.io/d3-heat-map/'
   },
@@ -69,14 +79,14 @@ export const moreProjects = [
   {
     name: 'Scatterplot Graph with D3.js',
     img: require(assetsDirectory + 'scatterplot.png'),
-    techList: ['javascript', 'react', 'fullstack'],
+    techList: ['javascript', 'react', 'fullstack', 'D3'],
     gitLink: 'https://github.com/libeja/d3-scatterplot-graph',
     liveLink: 'https://libeja.github.io/d3-scatterplot-graph/'
   },
   {
     name: 'Force Directed Graph with D3.js',
     img: require(assetsDirectory + 'force-directed-graph.png'),
-    techList: ['javascript', 'react', 'fullstack'],
+    techList: ['javascript', 'react', 'fullstack', 'D3'],
     gitLink: 'https://github.com/libeja/d3-force-directed-graph',
     liveLink: 'https://libeja.github.io/d3-force-directed-graph/'
   },
@@ -86,5 +96,40 @@ export const moreProjects = [
     techList: ['javascript', 'react', 'redux'],
     gitLink: 'https://github.com/libeja/recipe-box',
     liveLink: 'https://libeja.github.io/recipe-box/'
+  },
+  {
+    name: 'Markdown Previewer',
+    img: require(assetsDirectory + 'markdown-previewer.png'),
+    techList: ['javascript', 'react'],
+    gitLink: 'https://github.com/libeja/markdown-previewer',
+    liveLink: 'https://libeja.github.io/markdown-previewer/'
+  },
+  {
+    name: 'Bar Chart with D3.js',
+    img: require(assetsDirectory + 'bar-chart.png'),
+    techList: ['javascript', 'react', 'D3'],
+    gitLink: 'https://github.com/libeja/d3-bar-chart',
+    liveLink: 'https://libeja.github.io/d3-bar-chart/'
+  },
+  {
+    name: 'Random Quote Machine',
+    img: require(assetsDirectory + 'random-quote-machine.png'),
+    techList: ['javascript', 'html', 'css'],
+    gitLink: 'http://codepen.io/jugglnaut/pen/rrOPxY/',
+    liveLink: 'http://codepen.io/jugglnaut/full/rrOPxY/'
+  },
+  {
+    name: 'Wikipedia Viewer',
+    img: require(assetsDirectory + 'wikipedia-viewer.png'),
+    techList: ['javascript', 'html', 'css'],
+    gitLink: 'http://codepen.io/jugglnaut/pen/GjWVdg',
+    liveLink: 'http://codepen.io/jugglnaut/full/GjWVdg/'
+  },
+  {
+    name: 'Local Weather',
+    img: require(assetsDirectory + 'local-weather.png'),
+    techList: ['javascript', 'html', 'css'],
+    gitLink: 'http://codepen.io/jugglnaut/pen/QKEPRR',
+    liveLink: 'http://codepen.io/jugglnaut/full/QKEPRR/'
   },
 ];
