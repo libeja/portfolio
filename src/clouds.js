@@ -11,7 +11,8 @@ export default (sectionRef) => {
       "b6caf3",
       "c1b6f3",
       "dfb6f3",
-      "f3b6e8"]
+      "f3b6e8"
+    ];
 
     var randomNumber = Math.floor(Math.random() * colors.length);
 
