@@ -49,6 +49,13 @@ export const showcaseProjects = [
 // these projects will be revealed after clicking show more projects
 export const moreProjects = [
   {
+    name: 'Pomodoro Timer',
+    img: require(assetsDirectory + 'pomodoro.png'),
+    techList: ['javascript', 'html', 'css'],
+    gitLink: 'http://codepen.io/jugglnaut/pen/VmzdpK',
+    liveLink: 'http://codepen.io/jugglnaut/full/VmzdpK/'
+  },
+  {
     name: 'Meteorite Landings with D3.js',
     img: require(assetsDirectory + 'meteorite-landings.png'),
     techList: ['javascript', 'D3', 'Webpack\u00a02'],
