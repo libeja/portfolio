@@ -29,7 +29,7 @@ nav {
 	padding: 12px;
 	padding-left: 0;
 	padding-right: 0;
-	margin-right: 10px;
+	margin-right: 20px;
 	text-transform: uppercase;
   cursor: pointer;
 	border: 0;
@@ -78,7 +78,7 @@ nav {
 .hamburger-icon {
 		text-align: right;
 		position: relative;
-		right: 10px;
+		right: 15px;
 		z-index: 200;
 		transition: $cubic-bezier;
 	}
@@ -150,7 +150,7 @@ nav {
 		display: inline-block;
 		text-align: center;
 		li {
-			margin-right: 100px;
+			margin: 0 30px;
 		}
 	}
 }
