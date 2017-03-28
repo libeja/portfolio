@@ -7,42 +7,48 @@ export const showcaseProjects = [
     img: require(assetsDirectory + 'tic-tac-toe.png'),
     techList: ['html', 'css', 'javascript'],
     gitLink: 'http://codepen.io/jugglnaut/pen/aBjBWZ',
-    liveLink: 'http://codepen.io/jugglnaut/full/aBjBWZ/'
+    liveLink: 'http://codepen.io/jugglnaut/full/aBjBWZ/',
+    description: 'Player plays agains custom built AI opponent.'
   },
   {
-    name: 'Dungeon Crawler',
+    name: 'Dungeon Crawler Game',
     img: require(assetsDirectory + 'dungeon-crawler.png'),
     techList: ['html', 'css', 'javascript', 'react'],
     gitLink: 'https://github.com/libeja/dungeon-crawler',
-    liveLink: 'https://libeja.github.io/dungeon-crawler/'
+    liveLink: 'https://libeja.github.io/dungeon-crawler/',
+    description: 'Rogue-like game adventure inspired game. Collect items and defeat the boss.'
   },
   {
     name: 'Chore Chart',
     img: require(assetsDirectory + 'chore-chart.png'),
     techList: ['html', 'css', 'javascript', 'react', 'redux'],
     gitLink: 'https://github.com/libeja/chore-chart',
-    liveLink: 'https://libeja.github.io/chore-chart/'
+    liveLink: 'https://libeja.github.io/chore-chart/',
+    description: 'Final project for CS50. Chore tracking chart for housemates. Implemented with React and Redux architecture.'
   },
   {
     name: 'Game of Life',
     img: require(assetsDirectory + 'game-of-life.png'),
     techList: ['html', 'css', 'javascript', 'react'],
     gitLink: 'https://github.com/libeja/game-of-life',
-    liveLink: 'https://libeja.github.io/game-of-life/'
+    liveLink: 'https://libeja.github.io/game-of-life/',
+    description: 'Simple life simulation based on John Conway\'s Game of Life.'
   },
   {
     name: 'Simon',
     img: require(assetsDirectory + 'simon.png'),
     techList: ['html', 'css', 'javascript'],
     gitLink: 'https://github.com/libeja/simon',
-    liveLink: 'https://libeja.github.io/simon/'
+    liveLink: 'https://libeja.github.io/simon/',
+    description: 'Recreation of the elecronic Simon Game.'
   },
   {
     name: 'JavaScript Calculator',
     img: require(assetsDirectory + 'js-calculator.png'),
     techList: ['html', 'css', 'javascript', 'react'],
     gitLink: 'https://github.com/libeja/JavaScript-Calculator',
-    liveLink: 'http://codepen.io/jugglnaut/full/zoqpKp/'
+    liveLink: 'http://codepen.io/jugglnaut/full/zoqpKp/',
+    description: 'Functioning calculator build with JavaScript'
   },
 ];
 
@@ -53,14 +59,16 @@ export const moreProjects = [
     img: require(assetsDirectory + 'pomodoro.png'),
     techList: ['javascript', 'html', 'css'],
     gitLink: 'http://codepen.io/jugglnaut/pen/VmzdpK',
-    liveLink: 'http://codepen.io/jugglnaut/full/VmzdpK/'
+    liveLink: 'http://codepen.io/jugglnaut/full/VmzdpK/',
+    description: 'A productivity timer that alternates between focus and break sessions.'
   },
   {
     name: 'Meteorite Landings with D3.js',
     img: require(assetsDirectory + 'meteorite-landings.png'),
     techList: ['javascript', 'D3', 'Webpack\u00a02'],
     gitLink: 'https://github.com/libeja/d3-meteorite-landings',
-    liveLink: 'https://libeja.github.io/d3-meteorite-landings/'
+    liveLink: 'https://libeja.github.io/d3-meteorite-landings/',
+    description: ''
   },
   {
     name: 'Heatmap with D3.js',

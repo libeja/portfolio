@@ -20,6 +20,7 @@ const createList = (projectArray) => {
         techList={project.techList}
         gitLink={project.gitLink}
         liveLink={project.liveLink}
+        description={project.description}
       />
     })
   );
@@ -64,16 +65,6 @@ class Projects extends Component {
               </div>
             : null
           }
-          {/*{this.state.showMoreProjects === false
-            ? <button
-              onClick={this.handleShowMoreProjects}
-              className='btn-showMoreProjects'
-            >
-              <i className="fa fa-angle-double-down" aria-hidden="true"></i>
-              &nbsp;Show {moreProjects.length} More Projects
-            </button>
-            : null
-          }*/}
           <button
             onClick={this.handleShowMoreProjects}
             className='btn-showMoreProjects'

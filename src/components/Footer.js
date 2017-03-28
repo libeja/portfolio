@@ -18,12 +18,12 @@ const Footer = () => {
       <br/>
       <small>Created by Jay</small>
       <br/>
-      <small>Using handcrafted HTML, CSS, JavaScript, React and bundled and optimized with Webpack
+      <small>Using handcrafted HTML, CSS, JavaScript, and React. Bundled and optimized with Webpack.
       <br/>
       <br/>
       This portfolio is a single page React application
       <br/>
-      View this portolio's source code on <a target="_blank" href="https://github.com/libeja">GitHub&nbsp;
+      View this portolio's source code on <a target="_blank" href="https://github.com/libeja/portfolio/tree/master/src">GitHub&nbsp;
           <i className="fa fa-github" aria-hidden="true"></i></a>
       </small>
     </section>

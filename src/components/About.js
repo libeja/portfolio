@@ -11,20 +11,16 @@ const About = () => {
       </ScrollableAnchor>
       <div className="blurb">
         <p>
-          Hi, my name is Jay. I develop web applications. I
-          am looking for my first job in web development. 
-
-          This portfolio page is a single page application utilizing React, MongoDb, and Node.
-          Click here for more information.
-      
+          Hello, my name is Jay. I am based out of Portland, OR, and I am currently pursuing my
+          first job as a web developer. I love learning and solving problems.
         </p>
         <p>
-        Note: this portfolio itself is a full-fledged React application, bundled and optimized with Webpack&nbsp;2. Check out the source code here.
+        When I'm not taking a deep dive into the inner workings of JavaScript, I enjoy reading
+        fantasy books, watching movies, seeing music, camping, biking, juggling and contact juggling.
         </p>
-
-        <p>I have used the following technlogies to implement the projects: HTML5, CSS3, Sass(SCSS), React.js, Redux, D3.js Webpack&nbsp;2, git,
-          
-          Please check out my projects below.</p>
+        <p>
+          This portfolio itself is a full-fledged React application, bundled and optimized with Webpack&nbsp;2. Check out the <a target="_blank" href="https://github.com/libeja/portfolio/tree/master/src">source code</a>.
+        </p>
       </div>    
       <div className="education-section">
       <h4>Education and Certificates:</h4>

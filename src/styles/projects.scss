@@ -76,7 +76,13 @@ html.can-touch .project:hover {
 .techList {
   font-style: italic; 
   font-size: .75em;
+  color: $color-red;
+  margin-bottom: 3px;
+}
 
+.project-description {
+  text-align: center;
+  font-size: .75em;
 }
 
 

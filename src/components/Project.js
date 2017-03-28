@@ -4,7 +4,6 @@ import '../styles/projects.scss';
 const Project = (props) => {
   const techList = props.techList;
   const techString = techList.join(' / ');
-
   return (
     <div className='project-container'>
       <div className='project-name'>{props.name}
@@ -19,8 +18,8 @@ const Project = (props) => {
       <div className='techList'>
         {techString}
       </div>
-      <div className='techList' style={{textAlign: 'justify'}}>
-        A game with a custom build AI. Choose X or O. Pure HTML, CSS, and Javascript
+      <div className='project-description'>
+        {props.description}
       </div>
     </div>
   );
