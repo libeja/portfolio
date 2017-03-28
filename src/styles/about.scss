@@ -6,15 +6,17 @@
   margin: 0;
 
   h4 {
+      color: $color-red;
       font-size: 1.25em;
       width: 80%;
       margin: 0 auto;
-      padding-bottom: 3px;
-      margin-bottom: 10px;
+      padding-top: 20px;
+      padding-bottom: 10px;
       font-weight: 400;
+      letter-spacing: .1em;
     }
 
-  .blurb, .education-section {
+  .blurb, .education-section, .other-skills-container {
     width: 90%;
     max-width: 900px;
     margin: 0 auto;
@@ -28,15 +30,21 @@
   }
 
   .education-list {
-    // text-align: center;
-    width: 80%;
-    max-width: 900px;
-    margin: 0 auto;
+    // transform: translateX(-50%);
+    text-align: left;
+    padding-left: 20px;
+    // width: 80%;
+    // max-width: 900px;
+    // margin: 0 auto;
     // white-space: nowrap;
+    a {
+      border: 0;
+    }
+
     li {
       list-style-type: none;
       margin-bottom: 8px;
-      line-height: 1.6;
+      line-height: 1.4;
     }
   }
 }
@@ -45,24 +53,85 @@
   font-style: italic;
 }
 
+.devicon-container {
+  i {
+    display: inline-block;
+    margin: 10px;
+    color: #000;
+    font-size: 8em;
+  }
+}
+
+.other-skills-container div,
+.education-list-container ul {
+  // padding-top: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+
+.other-skills-container div {
+  // transform: translateX(25%);
+  width: 300px;
+}
+
+.other-skills {
+  width: 90%;
+  display: block;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.bold {
+  font-weight: 900;
+}
+.underline {
+  text-decoration: underline;
+}
+
 // small screen styles
 @media screen and (max-width: 620px) {
   .about {
     font-size: .8em;
   }
   .about .education-section {
-    text-align: left;
-    margin: 0;
-    width: 90%;
-
-    h4, .education-list {
-      margin-left: 5%;
-    }
+    // text-align: left;
+    // margin: 0;
+    // width: 90%;
   }
+
+    .education-list {
+      // margin-left: 5%;
+    // transform: none;
+    }
+    
+    .other-skills-container div {
+      width: 200px;
+   }
+
+    .about i {
+      font-size: 5em;
+    }
+  
 
   .education-list {
     text-align: left;
-    padding-left: 0;
-    font-size: .85em;
+    // padding-left: 0;
+    // font-size: .85em;
   }
+}
+
+@media screen and (max-width: 480px) {
+  .about i {
+      // font-size: 4em;
+    }
+    .about .education-list {
+      padding-left: 10px;
+    }
+    .education-list-container ul {
+      white-space: normal;
+    }
+    .other-skills-container div {
+      // width: 100px;
+   }
 }

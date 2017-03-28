@@ -5,6 +5,7 @@ import './styles/main.scss';
 
 import App from './components/App';
 
+// detects touch event and adds class to html element to fix hover issues
 import './detectTouch';
 
 ReactDOM.render(

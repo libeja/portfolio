@@ -13,6 +13,11 @@ configureAnchors({ offset: -65 })
 // https://erikflowers.github.io/weather-icons/
 import '../font/weather-icons.min.scss';
 
+// import devicons
+// http://konpa.github.io/devicon/
+import '../font/devicon.scss';
+
+
 class App extends Component {
   
   render() {

@@ -3,8 +3,8 @@ import Headroom from 'react-headroom';
 import '../styles/navigation.scss';
 
 const navLinks = [
-  <li key='about'><a href='#about'>About</a></li>,
   <li key='projects'><a href='#projects'>Projects</a></li>,
+  <li key='about'><a href='#about'>About</a></li>,
   <li key='contacts'><a href='#contact'>Contact</a></li>
 ]
 

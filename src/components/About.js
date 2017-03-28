@@ -28,16 +28,29 @@ const About = () => {
       </div>    
       <div className="education-section">
       <h4>Education and Certificates:</h4>
+      <div className="education-list-container">
       <ul className="education-list">
-          <li><a href="https://www.freecodecamp.com/libeja/front-end-certification" target="_blank">Front End Development Certificate, <span className="italic">freeCodeCamp</span></a></li>
-          <li><a href="https://www.freecodecamp.com/libeja/data-visualization-certification" target="_blank">Data Visualization / React.js Certificate, <span className="italic">freeCodeCamp</span></a></li>
-          <li>CS50 Introduction to Computer Science Certificate of Completion, <span className="italic">Harvard edX</span></li>
+          <li>Front End Development Certificate, <span className="italic">freeCodeCamp</span> (<a href="https://www.freecodecamp.com/libeja/front-end-certification" target="_blank">view</a>)</li>
+          <li>Data Visualization / React.js Certificate, <span className="italic">freeCodeCamp</span> (<a href="https://www.freecodecamp.com/libeja/data-visualization-certification" target="_blank">view</a>)</li>
+          <li>CS50: Introduction to Computer Science Certificate of Completion, <span className="italic">Harvard edX</span></li>
           <li>Bachelor of Arts, <span className="italic">Brown University</span></li>
       </ul>
       </div>
+      </div>
       <div className="skills-section">
         <h4>Skills:</h4>
-      
+        <div className="devicon-container">
+          <i className="devicon-html5-plain-wordmark"></i>
+          <i className="devicon-css3-plain-wordmark"></i>
+          <i className="devicon-javascript-plain"></i>
+          <i className="devicon-react-original-wordmark"></i>
+        </div>
+        <div className="other-skills-container">
+          <div>
+          <span className="other-skills"><span className="bold underline">Other Skills</span>: Redux, Webpack 2, Git</span>
+          <span className="other-skills"><span className="bold underline">Learning</span>: Node.js, MongoDb, Express.js</span>
+          </div>
+        </div>
       </div>
 
     </section>
