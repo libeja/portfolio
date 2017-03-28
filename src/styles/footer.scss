@@ -7,21 +7,32 @@
 	margin-bottom: 0;
 	padding: 30px;
 
-
 	h3 {
 		margin-bottom: 20px;
 	}
-	a {
+	.icons-container a {
 		margin: 0 10px;
 		position: relative;
 		color: $color-purple;
 		transition: all .2s ease-in;
+		text-decoration: none;
+		border: 0;
 	}
 	a:hover {
 		color: #000;
 		top: 3px;
 	}
+
 }
+
+// cancels hover effect on touchscreens
+html.can-touch .footer {
+	a:hover {
+		color: $color-purple;
+		top: 0;
+	}
+}
+
 
 small {
 	color: #000;

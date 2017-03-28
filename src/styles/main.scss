@@ -1,3 +1,5 @@
+// Use html.can-touch for touch screens
+
 @import 'variables';
 
 // @import url('https://fonts.googleapis.com/css?family=Raleway');
@@ -14,6 +16,10 @@ body {
   margin: 0 auto;
 }
 
+html.can-touch body{
+  
+}
+
 // .wrapper {
 //   max-width: $maxPageWidth;
 //   margin: 0 auto;
@@ -23,6 +29,34 @@ body {
 a {
   padding: 0;
 }
+
+a {
+    color: $color-purple;
+    transition: all .2s ease-in;
+    text-decoration: none;
+    border-bottom: 2px solid $color-purple;
+
+  }
+
+a:visited {
+  color: $color-purple;
+}
+
+
+a:hover {
+      color: #000;
+      border-color: #000;
+  }
+
+// for touch screens - removes sticky hover issue
+html.can-touch a:hover {
+  color: $color-purple;
+  border-color: $color-purple;
+}
+
+// a:active {
+//   color: #000;
+// }
 
 
 h1, h2, h3, h4, h5, h6, {
@@ -56,9 +90,10 @@ img {
 button {
   border: 0;
   outline: 0;
-  padding: 5px;
+  padding: 1.5em;
   box-shadow: -1px 1px 2px #000;
   background-color: #f02467;
+  border-radius: 10px;
   color: #fff;
   cursor: pointer;
 }
@@ -74,9 +109,3 @@ button {
   }
 }
 
-// larger screen styles
-@media screen and (min-width: 500px) {
-  div {
-    
-  }
-}

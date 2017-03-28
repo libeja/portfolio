@@ -5,6 +5,8 @@ import './styles/main.scss';
 
 import App from './components/App';
 
+import './detectTouch';
+
 ReactDOM.render(
   <App />, document.getElementById('app')
 );

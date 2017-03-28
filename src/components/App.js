@@ -20,8 +20,8 @@ class App extends Component {
       <div className='wrapper'>
         <Navigation />
         <Header />
-        <About />
         <Projects />
+        <About />
         <Footer />
       </div>
     )

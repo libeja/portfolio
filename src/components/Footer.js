@@ -23,7 +23,7 @@ const Footer = () => {
       <br/>
       This portfolio is a single page React application
       <br/>
-      View this portolio's source code on <a target="_blank" href="https://github.com/libeja">GitHub 
+      View this portolio's source code on <a target="_blank" href="https://github.com/libeja">GitHub&nbsp;
           <i className="fa fa-github" aria-hidden="true"></i></a>
       </small>
     </section>

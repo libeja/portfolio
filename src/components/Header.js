@@ -20,19 +20,19 @@ class Header extends Component {
     let clouds = makeClouds(this.header);
 
 
-    window.onblur = () => {
-      if (this.state.windowIsFocused) {
-        clouds.stopClouds();
-        this.setState({ windowIsFocused: false })
-      }
-    }
+    // window.onblur = () => {
+    //   if (this.state.windowIsFocused) {
+    //     clouds.stopClouds();
+    //     this.setState({ windowIsFocused: false })
+    //   }
+    // }
 
-    window.onfocus = () => {
-      if (!this.state.windowIsFocused) {
-        clouds.startClouds();
-        this.setState({ windowIsFocused: true })
-      }
-    }
+    // window.onfocus = () => {
+    //   if (!this.state.windowIsFocused) {
+    //     clouds.startClouds();
+    //     this.setState({ windowIsFocused: true })
+    //   }
+    // }
     clouds.startClouds();
   }
 

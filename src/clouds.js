@@ -1,6 +1,10 @@
 
 export default (sectionRef) => {
 
+  // If number of clouds is greater, they will be deleted.
+  // helps prevent bug of too many clouds building up when the window is not active
+  const maxNumOfCloudsAllowed = 40;
+
   let foregroundCloudTimeout;
   let randomCloudTimeout;
 
@@ -19,11 +23,25 @@ export default (sectionRef) => {
     return colors[randomNumber];
   }
 
+  // function will ensure that too many clouds don't build up when the window is inactive
+  const cloudCleanup = () => {
+    let cloudsOnScreen = 0;
+    setInterval(function () {
+      cloudsOnScreen = document.querySelectorAll('.cloud');
+      if (cloudsOnScreen.length > maxNumOfCloudsAllowed) {
+        for (let i = 0; i < cloudsOnScreen.length; i++) {
+          cloudsOnScreen[i].remove();
+        }
+      }
+    }, 10000);
+  };
+
   const startClouds = () => {
-    populateClouds.call(this);
-    createForeGroundCloud.call(this);
-    foregroundCloudTimeout = setInterval(populateClouds.bind(this), 5000);
-    randomCloudTimeout = setInterval(createForeGroundCloud.bind(this), 8000);
+    populateClouds();
+    createForeGroundCloud();
+    cloudCleanup();
+    foregroundCloudTimeout = setInterval(populateClouds, 5000);
+    randomCloudTimeout = setInterval(createForeGroundCloud, 8000);
   };
 
   const stopClouds = () => {
@@ -111,6 +129,7 @@ export default (sectionRef) => {
 
   };
 
+  // running this module exposes these methods
   return {
     startClouds,
     stopClouds

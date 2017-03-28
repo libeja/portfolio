@@ -19,6 +19,9 @@ const Project = (props) => {
       <div className='techList'>
         {techString}
       </div>
+      <div className='techList' style={{textAlign: 'justify'}}>
+        A game with a custom build AI. Choose X or O. Pure HTML, CSS, and Javascript
+      </div>
     </div>
   );
 }

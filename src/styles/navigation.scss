@@ -2,8 +2,12 @@
 
 nav {
 	a {
-		color: inherit;
+		color: #fff;
 		text-decoration: none;
+		border: none;
+	}
+	a:visited {
+  color: #fff;
 	}
 }
 
@@ -23,29 +27,38 @@ nav {
 	z-index: 100;
 
   li {
-	text-align: center;
-	display: none;
-	color: #fff;
-	padding: 12px;
-	padding-left: 0;
-	padding-right: 0;
-	margin-right: 20px;
-	text-transform: uppercase;
-  cursor: pointer;
-	border: 0;
-  transition: border .1s ease-in;
-  }
-
-  li:hover {
-  border-bottom: 5px solid #fff;  
-  padding-bottom: 2px;
-  
-  top: -3px;
-
+		text-align: center;
+		display: none;
+		color: #fff;
+		padding: 12px;
+		padding-left: 0;
+		padding-right: 0;
+		margin-right: 20px;
+		text-transform: uppercase;
+		cursor: pointer;
+		border: 0;
+		transition: border .1s ease-in;
+		
+		&:hover {
+			border-bottom: 5px solid #fff;  
+			padding-bottom: 2px;
+			top: -3px;
+		}
 	}
 
 }
 
+// cancel hover effects on touchscreens
+html.can-touch .wide-nav {
+	li:hover {
+		border-bottom: 0;  
+		padding-bottom: 0;
+		top: 0;
+	}
+	a:hover {
+		color: #fff;
+	}
+}
 
 .sideBar {
 	position: fixed;
@@ -72,6 +85,19 @@ nav {
 			text-decoration: underline;
 			margin-left: 5px;
 		}
+	}
+}
+
+// cancel hover effects on touchscreens
+html.can-touch .sideBar {
+	li:hover {
+		border-bottom: 0;  
+		padding-bottom: 0;
+		top: 0;
+	}
+	a:hover {
+		color: #fff;
+		
 	}
 }
 
@@ -155,3 +181,10 @@ nav {
 	}
 }
 
+// for smaller screens
+// remove sticky hover issue
+// @media (max-width: 600px) {
+//   li:hover {
+//    border: 0 !important;
+//   }
+// }

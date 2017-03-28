@@ -65,7 +65,7 @@ export const moreProjects = [
   {
     name: 'Heatmap with D3.js',
     img: require(assetsDirectory + 'heat-map.png'),
-    techList: ['javascript', 'D3', 'Webpack\u00a022'],
+    techList: ['javascript', 'D3', 'Webpack\u00a02'],
     gitLink: 'https://github.com/libeja/d3-heat-map',
     liveLink: 'https://libeja.github.io/d3-heat-map/'
   },
