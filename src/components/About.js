@@ -42,6 +42,7 @@ const About = () => {
         <div className="devicon-container">
           <i className="devicon-html5-plain-wordmark"></i>
           <i className="devicon-css3-plain-wordmark"></i>
+          <i className="devicon-sass-original"></i>
           <i className="devicon-javascript-plain"></i>
           <i className="devicon-react-original-wordmark"></i>
         </div>
