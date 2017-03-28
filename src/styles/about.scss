@@ -5,26 +5,26 @@
   color: #000;
   margin: 0;
 
+  h4 {
+      font-size: 1.25em;
+      width: 80%;
+      margin: 0 auto;
+      padding-bottom: 3px;
+      margin-bottom: 10px;
+      font-weight: 400;
+    }
+
   .blurb, .education-section {
     width: 90%;
     max-width: 900px;
     margin: 0 auto;
   }
 
-  .education-section {
+  .education-section, .skills-section {
     text-align: center;
     // width: 80%;
     // max-width: 900px;
-    // font-size: .75em;
-    
-    h4 {
-      font-size: 1.25em;
-      width: 80%;
-      margin: 0 auto;
-      border-bottom: 2px dashed #000;
-      padding-bottom: 3px;
-      margin-bottom: 10px;
-    }
+    font-size: .9em;
   }
 
   .education-list {
@@ -39,7 +39,6 @@
       line-height: 1.6;
     }
   }
-
 }
 
 .italic {

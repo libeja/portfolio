@@ -27,13 +27,17 @@ const About = () => {
           Please check out my projects below.</p>
       </div>    
       <div className="education-section">
-      <h4>Education and Certificates</h4>
+      <h4>Education and Certificates:</h4>
       <ul className="education-list">
           <li><a href="https://www.freecodecamp.com/libeja/front-end-certification" target="_blank">Front End Development Certificate, <span className="italic">freeCodeCamp</span></a></li>
           <li><a href="https://www.freecodecamp.com/libeja/data-visualization-certification" target="_blank">Data Visualization / React.js Certificate, <span className="italic">freeCodeCamp</span></a></li>
           <li>CS50 Introduction to Computer Science Certificate of Completion, <span className="italic">Harvard edX</span></li>
           <li>Bachelor of Arts, <span className="italic">Brown University</span></li>
       </ul>
+      </div>
+      <div className="skills-section">
+        <h4>Skills:</h4>
+      
       </div>
 
     </section>

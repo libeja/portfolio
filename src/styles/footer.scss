@@ -1,39 +1,59 @@
 @import 'variables';
 
 .footer {
-	background-color: $color-lightGreen;
+	// background-color: $color-lightGreen;
+	background-color: #000;
+	color: #fff;
 	text-align: center;
 	margin-top: 60px;
 	margin-bottom: 0;
 	padding: 30px;
 
 	h3 {
+		color: #fff;
 		margin-bottom: 20px;
 	}
+
+	a {
+		color: $color-green;
+		border-color: $color-green;
+	}
+
+	a:visited {
+		color: $color-green;		
+	}
+
+	a:hover {
+		color: #fff;
+		border-color: #fff;
+		
+	}
+
 	.icons-container a {
 		margin: 0 10px;
 		position: relative;
-		color: $color-purple;
 		transition: all .2s ease-in;
 		text-decoration: none;
 		border: 0;
-	}
-	a:hover {
-		color: #000;
-		top: 3px;
-	}
 
+		&:hover {
+			top: 3px;
+		}
+	}
 }
+// 	small {
+// 	a {
+// 		color: $color-green;
+// 	}
+// 	a:hover {
+// 		color: #fff;
+// }
 
 // cancels hover effect on touchscreens
 html.can-touch .footer {
 	a:hover {
-		color: $color-purple;
+		color: $color-green;
 		top: 0;
 	}
 }
 
-
-small {
-	color: #000;
-}

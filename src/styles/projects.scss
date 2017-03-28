@@ -50,22 +50,12 @@
   }
 }
 
-// .project-more-info {
-//   position: absolute;
-//   border-radius: 20%;
-//   width: 100%;
-//   height: 100%;
-//   background-color: #444;
-//   visibility: hidden;
-//   opacity: 0;
-//   transition: all .5s;
-
-
-//   &:hover {
-//     visibility: visible;
-//     opacity: 1;
-//   }
-// }
+// cancels hover effect on touchscreens
+html.can-touch .project:hover {
+		-webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
 
 .project-links {
   margin-bottom: 5px;

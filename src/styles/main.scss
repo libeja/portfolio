@@ -16,10 +16,6 @@ body {
   margin: 0 auto;
 }
 
-html.can-touch body{
-  
-}
-
 // .wrapper {
 //   max-width: $maxPageWidth;
 //   margin: 0 auto;
@@ -35,7 +31,6 @@ a {
     transition: all .2s ease-in;
     text-decoration: none;
     border-bottom: 2px solid $color-purple;
-
   }
 
 a:visited {
@@ -53,10 +48,6 @@ html.can-touch a:hover {
   color: $color-purple;
   border-color: $color-purple;
 }
-
-// a:active {
-//   color: #000;
-// }
 
 
 h1, h2, h3, h4, h5, h6, {
