@@ -3,12 +3,12 @@ const assetsDirectory = './assets/';
 // default projects shown on front page
 export const showcaseProjects = [
   {
-    name: 'Tic Tac Toe',
-    img: require(assetsDirectory + 'tic-tac-toe.png'),
-    techList: ['html', 'css', 'javascript'],
-    gitLink: 'http://codepen.io/jugglnaut/pen/aBjBWZ',
-    liveLink: 'http://codepen.io/jugglnaut/full/aBjBWZ/',
-    description: 'Player plays agains custom built AI opponent.'
+    name: 'Chore Chart',
+    img: require(assetsDirectory + 'chore-chart.png'),
+    techList: ['html', 'css', 'javascript', 'react', 'redux'],
+    gitLink: 'https://github.com/libeja/chore-chart',
+    liveLink: 'https://libeja.github.io/chore-chart/',
+    description: 'Final project for CS50. Chore tracking chart for housemates. Implemented with React and Redux architecture.'
   },
   {
     name: 'Dungeon Crawler Game',
@@ -17,14 +17,6 @@ export const showcaseProjects = [
     gitLink: 'https://github.com/libeja/dungeon-crawler',
     liveLink: 'https://libeja.github.io/dungeon-crawler/',
     description: 'Rogue-like adventure inspired game. Collect items and defeat the boss.'
-  },
-  {
-    name: 'Chore Chart',
-    img: require(assetsDirectory + 'chore-chart.png'),
-    techList: ['html', 'css', 'javascript', 'react', 'redux'],
-    gitLink: 'https://github.com/libeja/chore-chart',
-    liveLink: 'https://libeja.github.io/chore-chart/',
-    description: 'Final project for CS50. Chore tracking chart for housemates. Implemented with React and Redux architecture.'
   },
   {
     name: 'Game of Life',
@@ -43,6 +35,14 @@ export const showcaseProjects = [
     description: 'Recreation of the elecronic Simon Game.'
   },
   {
+    name: 'Tic Tac Toe',
+    img: require(assetsDirectory + 'tic-tac-toe.png'),
+    techList: ['html', 'css', 'javascript'],
+    gitLink: 'http://codepen.io/jugglnaut/pen/aBjBWZ',
+    liveLink: 'http://codepen.io/jugglnaut/full/aBjBWZ/',
+    description: 'Player plays agains custom built AI opponent.'
+  },
+  {
     name: 'JavaScript Calculator',
     img: require(assetsDirectory + 'js-calculator.png'),
     techList: ['html', 'css', 'javascript', 'react'],
@@ -54,6 +54,15 @@ export const showcaseProjects = [
 
 // these projects will be revealed after clicking show more projects
 export const moreProjects = [
+  {
+    name: 'Recipe Box',
+    img: require(assetsDirectory + 'recipe-box.png'),
+    techList: ['javascript', 'react', 'redux'],
+    gitLink: 'https://github.com/libeja/recipe-box',
+    liveLink: 'https://libeja.github.io/recipe-box/',
+    description: 'An app created with React.js and Redux that uses localStorage to store state. ' 
+      + 'A user can enter, edit, or delete recipes.'
+  },
   {
     name: 'Pomodoro Timer',
     img: require(assetsDirectory + 'pomodoro.png'),
@@ -111,15 +120,6 @@ export const moreProjects = [
     gitLink: 'https://github.com/libeja/d3-force-directed-graph',
     liveLink: 'https://libeja.github.io/d3-force-directed-graph/',
     description: 'App makes an AJAX request and visualizes JSON as a force-directed graph to show national contiguity'
-  },
-  {
-    name: 'Recipe Box',
-    img: require(assetsDirectory + 'recipe-box.png'),
-    techList: ['javascript', 'react', 'redux'],
-    gitLink: 'https://github.com/libeja/recipe-box',
-    liveLink: 'https://libeja.github.io/recipe-box/',
-    description: 'An app created with React.js and Redux that uses localStorage to store state. ' 
-      + 'A user can enter, edit, or delete recipes.'
   },
   {
     name: 'Markdown Previewer',
