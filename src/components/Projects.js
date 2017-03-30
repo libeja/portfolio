@@ -51,7 +51,7 @@ class Projects extends Component {
   componentDidMount() {
     // fetch and preload showcase images to prevent loading when user clicks 'show more projects'
     const imgArray = [];
-    showcaseProjects.forEach(project => {
+    moreProjects.forEach( project => {
       const img = new Image();
       img.src = project.img;
       imgArray.push(img)
