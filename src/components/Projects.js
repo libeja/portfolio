@@ -48,6 +48,16 @@ class Projects extends Component {
     }
   }
 
+  componentDidMount() {
+    // fetch and preload showcase images to prevent loading when user clicks 'show more projects'
+    const imgArray = [];
+    showcaseProjects.forEach(project => {
+      const img = new Image();
+      img.src = project.img;
+      imgArray.push(img)
+    });
+  }
+
   // TODO: write function that evenly divides number of projects into appropriate number
   //       of rows that recalculates on page resizing
   render() {
