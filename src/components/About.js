@@ -19,7 +19,7 @@ const About = () => {
         fantasy books, watching movies, seeing music, camping, biking, juggling and contact juggling.
         </p>
         <p>
-          This portfolio itself is a full-fledged React application, bundled and optimized with Webpack&nbsp;2. Check out the <a target="_blank" href="https://github.com/libeja/portfolio/tree/master/src">source code</a>.
+          This portfolio page is a full-fledged React application, bundled and optimized with Webpack&nbsp;2. Check out the <a target="_blank" href="https://github.com/libeja/portfolio/tree/master/src">source code</a>.
         </p>
       </div>    
       <div className="education-section">
