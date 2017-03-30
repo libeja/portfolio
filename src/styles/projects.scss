@@ -20,13 +20,19 @@
 }
 
 
-// for individual project
+// for individual showcase project
 .project-container {
   width: 250px;
   height: 300px;
   margin: 10px;
   margin-bottom: 30px;
   text-align: center;
+}
+
+// for individual 'show more' project
+.more-project-container {
+  @extend .project-container;
+  margin-bottom: 100px;
 }
 
 .project {

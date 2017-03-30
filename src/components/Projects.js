@@ -10,7 +10,7 @@ import { goToAnchor } from 'react-scrollable-anchor';
 import { showcaseProjects, moreProjects } from '../projectList';
 
 // returns a mapped list of projects out of passed in project array
-const createList = (projectArray) => {
+const createList = (projectArray, type) => {
   return (
     projectArray.map((project) => {
       return <Project
@@ -21,6 +21,7 @@ const createList = (projectArray) => {
         gitLink={project.gitLink}
         liveLink={project.liveLink}
         description={project.description}
+        type={type}
       />
     })
   );
@@ -56,12 +57,12 @@ class Projects extends Component {
           <h3>&#60; Projects /&#62;</h3>
         </ScrollableAnchor>
         <div className='projects-container'>
-        {createList(showcaseProjects)}
+        {createList(showcaseProjects, 'showcase-project')}
         </div>
         <ReactCSSTransitionGroup transitionName="moreProjects" transitionEnterTimeout={1000} transitionLeaveTimeout={900}>
           {this.state.showMoreProjects
             ? <div key='projectContainer' className='test moreProjects-container'>
-                {createList(moreProjects)}
+                {createList(moreProjects, 'more-project')}
               </div>
             : null
           }

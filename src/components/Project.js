@@ -4,8 +4,16 @@ import '../styles/projects.scss';
 const Project = (props) => {
   const techList = props.techList;
   const techString = techList.join(' / ');
+  let className;
+
+  if (props.type === 'showcase-project') {
+    className = 'project-container';
+  } else {
+    className = 'more-project-container';
+  }
+
   return (
-    <div className='project-container'>
+    <div className={className}>
       <div className='project-name'>{props.name}
       </div>
       <a href={props.liveLink} target='_blank'>
