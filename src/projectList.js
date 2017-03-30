@@ -68,9 +68,7 @@ export const moreProjects = [
     techList: ['javascript', 'D3', 'Webpack\u00a02'],
     gitLink: 'https://github.com/libeja/d3-meteorite-landings',
     liveLink: 'https://libeja.github.io/d3-meteorite-landings/',
-    description: 'displays a visualization of meteorite landings across the globe using the D3.js data ' 
-      + 'visualization library\'s geographic path generator and using geojson and topojson data. '
-      + 'The radius and color of the circles visualizes the mass of the meteorite.'
+    description: 'D3 visualization of meteorite landings across the globe using geojson and topojson data.'
   },
   {
     name: 'Heatmap with D3.js',
@@ -112,8 +110,7 @@ export const moreProjects = [
     techList: ['javascript', 'react', 'fullstack', 'D3'],
     gitLink: 'https://github.com/libeja/d3-force-directed-graph',
     liveLink: 'https://libeja.github.io/d3-force-directed-graph/',
-    description: 'App makes an AJAX request using the axios promise-based library to request ' 
-      + 'National Contiguity information then using D3.js to visualize data as a force-directed graph.'
+    description: 'App makes an AJAX request and visualizes JSON as a force-directed graph to show national contiguity'
   },
   {
     name: 'Recipe Box',
@@ -165,7 +162,6 @@ export const moreProjects = [
     techList: ['javascript', 'html', 'css'],
     gitLink: 'http://codepen.io/jugglnaut/pen/QKEPRR',
     liveLink: 'http://codepen.io/jugglnaut/full/QKEPRR/',
-    description: 'Requests weather data from Darksky’s API and gives the user the current weather ' 
-      + 'conditions based on client location. Visualized conditions with appropriate weather icon.'
+    description: 'Requests weather data from OpenWeatherMap\'s API and displays the local weather based on client location.'
   },
 ];

@@ -71,7 +71,7 @@ class Projects extends Component {
         </div>
         <ReactCSSTransitionGroup transitionName="moreProjects" transitionEnterTimeout={1000} transitionLeaveTimeout={900}>
           {this.state.showMoreProjects
-            ? <div key='projectContainer' className='test moreProjects-container'>
+            ? <div key='projectContainer' className='moreProjects-container'>
                 {createList(moreProjects, 'more-project')}
               </div>
             : null

@@ -91,12 +91,12 @@ html.can-touch .project:hover {
   font-size: .75em;
 }
 
-
-
 // container holding additional projects after user clicks 'more projects' button
 // projects nested in this div will be smaller
 .moreProjects-container {
   @extend .projects-container;
+
+  margin-top: 30px;
 
   .project-name {
     font-size: .75em;
@@ -112,7 +112,6 @@ html.can-touch .project:hover {
     height: 200px;
     margin-left: 0;
     margin-right: 0;
-
   }
   
   .project {
@@ -120,7 +119,6 @@ html.can-touch .project:hover {
     height: 100px;
   }
 }
-
 
 .project-name {
   font-size: 1.2em;
@@ -135,15 +133,7 @@ html.can-touch .project:hover {
   margin: 0 auto;
 }
 
-
-
-
 // react transition classes for animating more projects panel
-
-// .test {
-//   height: auto;
-// }
-
 .moreProjects-enter {
   opacity: 0.01;
   max-height: 0px;
