@@ -96,7 +96,7 @@ export default (sectionRef) => {
 
     let cloud = cloudArray[randomCloud];
 
-    cloudElement.setAttribute("class", "cloud");
+    cloudElement.setAttribute("class", "background-cloud");
 
     let cloudStyle = "top: " + randomPosition + "%; " +
       "font-size: " + cloud.size + "em; " +
@@ -123,7 +123,7 @@ export default (sectionRef) => {
       "animation: myanimation 8s linear;"
 
     cloudElement.addEventListener("animationend", destroyCloud);
-    cloudElement.setAttribute("class", "cloud");
+    cloudElement.setAttribute("class", "foreground-cloud");
     cloudElement.setAttribute("style", cloudStyle);
     sectionRef.appendChild(cloudElement);
 

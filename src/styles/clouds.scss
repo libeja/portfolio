@@ -5,13 +5,20 @@
     100% { left: 120% }
 }
 
-.cloud {
+.foreground-cloud {
 	position: absolute;
   left: -200px;
 
 	/*animation: myanimation 8s linear;*/
 }
-.cloud:before {
+
+.background-cloud {
+  @extend .foreground-cloud;
+  left: -80px;
+}
+
+.background-cloud:before,
+.foreground-cloud:before {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.05); /*fix for bug that left trails
                                             as cloud moved across the screen*/
 
