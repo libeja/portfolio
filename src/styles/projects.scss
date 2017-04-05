@@ -10,7 +10,7 @@
   flex-wrap: wrap;
   width: 85%;
   max-width: 960px;
-  margin: 0 auto;
+  margin: 0 auto 25px auto;
 
   .project-name {
     font-size: 1em;
@@ -111,8 +111,8 @@ html.can-touch .project:hover {
   .project-container {
     width: 150px;
     height: 200px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 0;
+    margin-right: 0;
   }
   
   .project {
@@ -156,3 +156,4 @@ html.can-touch .project:hover {
   max-height: 0px;
   transition: all 950ms;
 }
+
