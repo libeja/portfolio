@@ -62,7 +62,7 @@ export const moreProjects = [
     gitLink: 'https://github.com/libeja/markdown-previewer',
     liveLink: 'https://libeja.github.io/markdown-previewer/',
     description: 'Type text with Markdown syntax in one pane, and see it converted in real-time to '
-    + 'HTML in a second pane. Build with React.'
+    + 'HTML in a second pane. Built with React.'
   },
   {
     name: 'JavaScript Calculator',
@@ -70,7 +70,7 @@ export const moreProjects = [
     techList: ['html', 'css', 'javascript', 'react'],
     gitLink: 'https://github.com/libeja/JavaScript-Calculator',
     liveLink: 'http://codepen.io/jugglnaut/full/zoqpKp/',
-    description: 'Functioning calculator build with JavaScript'
+    description: 'Functioning calculator built with JavaScript'
   },
   {
     name: 'Pomodoro Timer',
