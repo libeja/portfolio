@@ -43,25 +43,34 @@ export const showcaseProjects = [
     description: 'Player plays agains custom built AI opponent.'
   },
   {
+    name: 'Recipe Box',
+    img: require(assetsDirectory + 'recipe-box.png'),
+    techList: ['javascript', 'react', 'redux'],
+    gitLink: 'https://github.com/libeja/recipe-box',
+    liveLink: 'https://libeja.github.io/recipe-box/',
+    description: 'An app created with React.js and Redux that uses localStorage to store state. '
+    + 'A user can enter, edit, or delete recipes.'
+  }
+];
+
+// these projects will be revealed after clicking show more projects
+export const moreProjects = [
+  {
+    name: 'Markdown Previewer',
+    img: require(assetsDirectory + 'markdown-previewer.png'),
+    techList: ['javascript', 'react'],
+    gitLink: 'https://github.com/libeja/markdown-previewer',
+    liveLink: 'https://libeja.github.io/markdown-previewer/',
+    description: 'Type text with Markdown syntax in one pane, and see it converted in real-time to '
+    + 'HTML in a second pane. Build with React.'
+  },
+  {
     name: 'JavaScript Calculator',
     img: require(assetsDirectory + 'js-calculator.png'),
     techList: ['html', 'css', 'javascript', 'react'],
     gitLink: 'https://github.com/libeja/JavaScript-Calculator',
     liveLink: 'http://codepen.io/jugglnaut/full/zoqpKp/',
     description: 'Functioning calculator build with JavaScript'
-  },
-];
-
-// these projects will be revealed after clicking show more projects
-export const moreProjects = [
-  {
-    name: 'Recipe Box',
-    img: require(assetsDirectory + 'recipe-box.png'),
-    techList: ['javascript', 'react', 'redux'],
-    gitLink: 'https://github.com/libeja/recipe-box',
-    liveLink: 'https://libeja.github.io/recipe-box/',
-    description: 'An app created with React.js and Redux that uses localStorage to store state. ' 
-      + 'A user can enter, edit, or delete recipes.'
   },
   {
     name: 'Pomodoro Timer',
@@ -120,15 +129,6 @@ export const moreProjects = [
     gitLink: 'https://github.com/libeja/d3-force-directed-graph',
     liveLink: 'https://libeja.github.io/d3-force-directed-graph/',
     description: 'App makes an AJAX request and visualizes JSON as a force-directed graph to show national contiguity'
-  },
-  {
-    name: 'Markdown Previewer',
-    img: require(assetsDirectory + 'markdown-previewer.png'),
-    techList: ['javascript', 'react'],
-    gitLink: 'https://github.com/libeja/markdown-previewer',
-    liveLink: 'https://libeja.github.io/markdown-previewer/',
-    description: 'Type text with Markdown syntax in one pane, and see it converted in real-time to ' 
-      + 'HTML in a second pane. Build with React.'
   },
   {
     name: 'Bar Chart with D3.js',
