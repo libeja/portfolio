@@ -45,7 +45,7 @@ const About = () => {
         <div className="other-skills-container">
           <div>
           <span className="other-skills"><span className="bold underline">Other Skills</span>: Redux, Webpack 2, Git</span>
-          <span className="other-skills"><span className="bold underline">Learning</span>: Node.js, MongoDb, Express.js</span>
+          <span className="other-skills"><span className="bold underline">Learning</span>: Node.js, MongoDB, Express.js</span>
           </div>
         </div>
       </div>

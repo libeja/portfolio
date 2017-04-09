@@ -98,6 +98,14 @@ export const moreProjects = [
       + 'Shows variance on a chromatic scale.'
   },
   {
+    name: 'URL Shortening Microservice',
+    img: require(assetsDirectory + 'url-shortener.png'),
+    techList: ['javascript', 'react', 'node', 'express', 'mongoDB'],
+    gitLink: 'https://github.com/libeja/url-shortener',
+    liveLink: 'https://urlshorten-fcc.herokuapp.com/',
+    description: 'This API microservice will shorten a valid URL. The shortened URLs are stored in a MongoDB database.'
+  },
+  {
     name: 'Timestamp Microservice',
     img: require(assetsDirectory + 'timestamp.png'),
     techList: ['javascript', 'react', 'fullstack'],
