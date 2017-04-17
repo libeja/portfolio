@@ -27,7 +27,7 @@ const About = () => {
       <div className="education-list-container">
       <ul className="education-list">
           <li>Front End Development Certificate, <span className="italic">freeCodeCamp</span> (<a href="https://www.freecodecamp.com/libeja/front-end-certification" target="_blank">view</a>)</li>
-          <li>Data Visualization / React.js Certificate, <span className="italic">freeCodeCamp</span> (<a href="https://www.freecodecamp.com/libeja/data-visualization-certification" target="_blank">view</a>)</li>
+          <li>Data Visualization / ReactJS Certificate, <span className="italic">freeCodeCamp</span> (<a href="https://www.freecodecamp.com/libeja/data-visualization-certification" target="_blank">view</a>)</li>
           <li>CS50: Introduction to Computer Science Certificate of Completion, <span className="italic">Harvard edX</span></li>
           <li>Bachelor of Arts, <span className="italic">Brown University</span></li>
       </ul>

@@ -56,6 +56,23 @@ export const showcaseProjects = [
 // these projects will be revealed after clicking show more projects
 export const moreProjects = [
   {
+    name: 'File Metadata Microservice',
+    img: require(assetsDirectory + 'file-metadata.png'),
+    techList: ['javascript', 'react', 'node', 'express'],
+    gitLink: 'https://github.com/libeja/file-metadata-ms',
+    liveLink: 'https://file-sizer-fcc.herokuapp.com/',
+    description: 'Node/Express app that accepts a file and returns the size of the file in JSON format'
+  },
+  {
+    name: 'Image Search Abstraction Layer',
+    img: require(assetsDirectory + 'image-search.png'),
+    techList: ['javascript', 'react', 'node', 'express', 'mongoDB'],
+    gitLink: 'https://github.com/libeja/image-search',
+    liveLink: 'https://fccapi-imagesearch.herokuapp.com/',
+    description: 'This API microservice will shorten a valid URL. The shortened URLs are stored in a MongoDB database. '
+    + 'Use API endpoints to redirect to URLS'
+  },
+  {
     name: 'Markdown Previewer',
     img: require(assetsDirectory + 'markdown-previewer.png'),
     techList: ['javascript', 'react'],
