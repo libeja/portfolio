@@ -19,7 +19,7 @@ const About = () => {
         fantasy books, watching movies, seeing music, camping, biking, juggling and contact juggling.
         </p>
         <p>
-          This portfolio page is a full-fledged React application, bundled and optimized with Webpack&nbsp;2. Check out the <a target="_blank" href="https://github.com/libeja/portfolio/tree/master/src">source code</a>.
+          This portfolio page is a full-fledged React application, bundled and optimized with Webpack&nbsp;2. Client-side routing with React Router 4. Check out the <a target="_blank" href="https://github.com/libeja/portfolio/tree/master/src">source code</a>.
         </p>
       </div>    
       <div className="education-section">
@@ -35,12 +35,15 @@ const About = () => {
       </div>
       <div className="skills-section">
         <h4>Skills:</h4>
+        {/* Devicons from: http://konpa.github.io/devicon/ */}
         <div className="devicon-container">
           <i className="devicon-html5-plain-wordmark"></i>
           <i className="devicon-css3-plain-wordmark"></i>
-          <i className="devicon-sass-original"></i>
           <i className="devicon-javascript-plain"></i>
+          <br/>
           <i className="devicon-react-original-wordmark"></i>
+          <i className="devicon-webpack-plain-wordmark"></i>
+          <i className="devicon-sass-original"></i>
         </div>
         <div className="other-skills-container">
           <div>
