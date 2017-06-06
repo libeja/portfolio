@@ -36,31 +36,72 @@
 }
 
 .project {
-  border: 3px solid #000;
-  border-radius: 20%;
+  border: 1px solid #000;
+  border-radius: 10px;
   width: 200px;
   height: 200px;
   background-size: cover;
   background-position: 50%;
-  transition: all .2s cubic-bezier(.6, 2, .9, 1);
+  // transition: all .2s cubic-bezier(.6, 2, .9, 1);
   margin: 0 auto;
   margin-bottom: 15px;
   box-shadow: -3px 3px 10px #333;
   
-  &:hover {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-    box-shadow: -6px 6px 20px #333;
-    background-color: rgba(0, 0, 0, 0)
-  }
+  // &:hover {
+  //   -webkit-transform: scale(1.2);
+  //   -ms-transform: scale(1.2);
+  //   transform: scale(1.2);
+  //   box-shadow: -6px 6px 20px #333;
+  //   background-color: rgba(0, 0, 0, 0)
+  // }
+}
+
+.project-image-container {
+  position: relative;
+}
+
+.project-page-overlay {
+  border-radius: 10px;  
+  position: absolute;
+  z-index: 999;
+  opacity: 0;
+  transition: all .2s;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000;
+  color: #fff;
+}
+
+// overlay settings for showcase projects
+.project-container .project-page-overlay {
+  width: 202px;
+  font-size: 18px;
+}
+
+// overlay settings for smaller extra projects
+.more-project-container .project-page-overlay {
+  width: 102px;
+  font-size: 12px;
+}
+
+.overlay-text {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+}
+
+.project-page-overlay:hover {
+  opacity: 1;
 }
 
 // cancels hover effect on touchscreens
-html.can-touch .project:hover {
-		-webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
+html.can-touch .project-page-overlay:hover {
+	opacity: 0;
 }
 
 .project-links {

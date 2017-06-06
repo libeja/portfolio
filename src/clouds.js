@@ -3,7 +3,7 @@ export default (sectionRef) => {
 
   // If number of clouds is greater, they will be deleted.
   // helps prevent bug of too many clouds building up when the window is not active
-  const maxNumOfCloudsAllowed = 40;
+  const maxNumOfCloudsAllowed = 20;
 
   let foregroundCloudTimeout;
   let randomCloudTimeout;
@@ -33,7 +33,7 @@ export default (sectionRef) => {
           cloudsOnScreen[i].remove();
         }
       }
-    }, 10000);
+    }, 5000);
   };
 
   const startClouds = () => {
