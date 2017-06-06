@@ -3,12 +3,45 @@ const assetsDirectory = './assets/';
 // default projects shown on front page
 export const showcaseProjects = [
   {
-    name: 'Chore Chart',
-    img: require(assetsDirectory + 'chore-chart.png'),
-    techList: ['html', 'css', 'javascript', 'react', 'redux'],
-    gitLink: 'https://github.com/libeja/chore-chart',
-    liveLink: 'https://libeja.github.io/chore-chart/',
-    description: 'Final project for CS50. Chore tracking chart for housemates. Implemented with React and Redux architecture.'
+    name: 'PinBored',
+    img: require(assetsDirectory + 'pinbored.png'),
+    techList: ['html', 'css', 'javascript', 'react', 'react router', 'mongoDB', 'node', 'express'],
+    gitLink: 'https://github.com/libeja/pinbored',
+    liveLink: 'https://pinbored.herokuapp.com/',
+    description: 'Final full stack application for freeCodeCamp\'s back end certification. Pin and like images' + 
+    ' to a multi-user communal board. Authenticates with Twitter.'
+  },
+  {
+    name: 'The Voting Booth',
+    img: require(assetsDirectory + 'voting-booth.png'),
+    techList: ['html', 'css', 'javascript', 'react', 'react router', 'mongoDB', 'node', 'express'],
+    gitLink: 'https://github.com/libeja/voting-app',
+    liveLink: 'https://fcc-voting-booth.herokuapp.com/',
+    description: 'Create polls that other users can vote on.'
+  },
+  {
+    name: 'The Book Club',
+    img: require(assetsDirectory + 'bookclub.png'),
+    techList: ['html', 'css', 'javascript', 'react', 'react router', 'mongoDB', 'node', 'express'],
+    gitLink: 'https://github.com/libeja/book-trading-club',
+    liveLink: 'https://the-book-club.herokuapp.com/',
+    description: 'Full stack app. Trade books with other users. Created custom login and authentication'
+  },
+  {
+    name: 'Nightlife Coordination App',
+    img: require(assetsDirectory + 'nightlife.png'),
+    techList: ['html', 'css', 'javascript', 'react', 'mongoDB', 'node', 'express'],
+    gitLink: 'https://github.com/libeja/nightlife-coordination',
+    liveLink: 'https://fcc-nightlife-app-jay.herokuapp.com/',
+    description: 'Select locations you will be attending. See how many users are going to different locations.'
+  },
+  {
+    name: 'Chart the Market',
+    img: require(assetsDirectory + 'stocks.png'),
+    techList: ['html', 'css', 'javascript', 'react', 'mongoDB', 'node', 'express', 'socket.io'],
+    gitLink: 'https://github.com/libeja/stocks',
+    liveLink: 'https://fcc-chart-the-stockmarket.herokuapp.com/',
+    description: 'Fullstack project updated in real-time using socket.io.'
   },
   {
     name: 'Dungeon Crawler Game',
@@ -180,6 +213,14 @@ export const moreProjects = [
     gitLink: 'http://codepen.io/jugglnaut/pen/GjWVdg',
     liveLink: 'http://codepen.io/jugglnaut/full/GjWVdg/',
     description: 'Utilized Wikipedia’s API to search for Wikipedia articles and display within the interface.'
+  },
+  {
+    name: 'Twitch.tv JSON API',
+    img: require(assetsDirectory + 'twitch-api.png'),
+    techList: ['javascript', 'html', 'css'],
+    gitLink: 'https://codepen.io/jugglnaut/pen/PGRqQB',
+    liveLink: 'https://codepen.io/jugglnaut/full/PGRqQB',
+    description: 'Use the Twitch API to see which users are currently streaming.'
   },
   {
     name: 'Local Weather',
