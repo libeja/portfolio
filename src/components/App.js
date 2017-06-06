@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Route, Switch } from 'react-router-dom';
+
 import Header from './Header';
 import Navigation from './Navigation';
 import About from './About';
@@ -17,16 +19,29 @@ import '../font/weather-icons.min.scss';
 // http://konpa.github.io/devicon/
 import '../font/devicon.scss';
 
-
 class App extends Component {
-  
   render() {
-    return (
-      <div className='wrapper'>
-        <Navigation />
+    const HomeComponents = () => (
+      <div>
         <Header />
         <Projects />
         <About />
+      </div>
+    );
+
+    const ProjectPage = ({ match }) => (
+      <div>
+        <h1>{match.params.projectUrl}</h1>
+      </div>
+    );
+
+    return (
+      <div className='wrapper'>
+        <Navigation />
+        <Switch>
+          <Route path='/:projectUrl' component={ProjectPage} />
+          <Route path='/' render={HomeComponents} />
+        </Switch>
         <Footer />
       </div>
     )

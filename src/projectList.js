@@ -4,6 +4,7 @@ const assetsDirectory = './assets/';
 export const showcaseProjects = [
   {
     name: 'PinBored',
+    projectUrl: 'pinBored',
     img: require(assetsDirectory + 'pinbored.png'),
     techList: ['html', 'css', 'javascript', 'react', 'react router', 'mongoDB', 'node', 'express'],
     gitLink: 'https://github.com/libeja/pinbored',
@@ -13,6 +14,7 @@ export const showcaseProjects = [
   },
   {
     name: 'The Voting Booth',
+    projectUrl: 'voting-booth',
     img: require(assetsDirectory + 'voting-booth.png'),
     techList: ['html', 'css', 'javascript', 'react', 'react router', 'mongoDB', 'node', 'express'],
     gitLink: 'https://github.com/libeja/voting-app',
@@ -21,6 +23,7 @@ export const showcaseProjects = [
   },
   {
     name: 'The Book Club',
+    projectUrl: 'book-club',
     img: require(assetsDirectory + 'bookclub.png'),
     techList: ['html', 'css', 'javascript', 'react', 'react router', 'mongoDB', 'node', 'express'],
     gitLink: 'https://github.com/libeja/book-trading-club',
@@ -29,6 +32,7 @@ export const showcaseProjects = [
   },
   {
     name: 'Nightlife Coordination App',
+    projectUrl: 'nightlife',
     img: require(assetsDirectory + 'nightlife.png'),
     techList: ['html', 'css', 'javascript', 'react', 'mongoDB', 'node', 'express'],
     gitLink: 'https://github.com/libeja/nightlife-coordination',
@@ -37,6 +41,7 @@ export const showcaseProjects = [
   },
   {
     name: 'Chart the Market',
+    projectUrl: 'stocks',
     img: require(assetsDirectory + 'stocks.png'),
     techList: ['html', 'css', 'javascript', 'react', 'mongoDB', 'node', 'express', 'socket.io'],
     gitLink: 'https://github.com/libeja/stocks',
@@ -45,6 +50,7 @@ export const showcaseProjects = [
   },
   {
     name: 'Dungeon Crawler Game',
+    projectUrl: 'dungeon-crawler',
     img: require(assetsDirectory + 'dungeon-crawler.png'),
     techList: ['html', 'css', 'javascript', 'react'],
     gitLink: 'https://github.com/libeja/dungeon-crawler',
@@ -53,6 +59,7 @@ export const showcaseProjects = [
   },
   {
     name: 'Game of Life',
+    projectUrl: 'game-of-life',
     img: require(assetsDirectory + 'game-of-life.png'),
     techList: ['html', 'css', 'javascript', 'react'],
     gitLink: 'https://github.com/libeja/game-of-life',
@@ -61,6 +68,7 @@ export const showcaseProjects = [
   },
   {
     name: 'Simon',
+    projectUrl: 'simon',
     img: require(assetsDirectory + 'simon.png'),
     techList: ['html', 'css', 'javascript'],
     gitLink: 'https://github.com/libeja/simon',
@@ -69,6 +77,7 @@ export const showcaseProjects = [
   },
   {
     name: 'Tic Tac Toe',
+    projectUrl: 'tic-tac-toe',
     img: require(assetsDirectory + 'tic-tac-toe.png'),
     techList: ['html', 'css', 'javascript'],
     gitLink: 'http://codepen.io/jugglnaut/pen/aBjBWZ',
@@ -77,6 +86,7 @@ export const showcaseProjects = [
   },
   {
     name: 'Recipe Box',
+    projectUrl: 'recipe-box',
     img: require(assetsDirectory + 'recipe-box.png'),
     techList: ['javascript', 'react', 'redux'],
     gitLink: 'https://github.com/libeja/recipe-box',
@@ -90,6 +100,7 @@ export const showcaseProjects = [
 export const moreProjects = [
   {
     name: 'File Metadata Microservice',
+    projectUrl: 'file-metadata-ms',
     img: require(assetsDirectory + 'file-metadata.png'),
     techList: ['javascript', 'react', 'node', 'express'],
     gitLink: 'https://github.com/libeja/file-metadata-ms',
@@ -98,6 +109,7 @@ export const moreProjects = [
   },
   {
     name: 'Image Search Abstraction Layer',
+    projectUrl: 'image-search-ms',
     img: require(assetsDirectory + 'image-search.png'),
     techList: ['javascript', 'react', 'node', 'express', 'mongoDB'],
     gitLink: 'https://github.com/libeja/image-search',
@@ -107,6 +119,7 @@ export const moreProjects = [
   },
   {
     name: 'Markdown Previewer',
+    projectUrl: 'markdown-previewer',
     img: require(assetsDirectory + 'markdown-previewer.png'),
     techList: ['javascript', 'react'],
     gitLink: 'https://github.com/libeja/markdown-previewer',
@@ -116,6 +129,7 @@ export const moreProjects = [
   },
   {
     name: 'JavaScript Calculator',
+    projectUrl: 'javascript-calc',
     img: require(assetsDirectory + 'js-calculator.png'),
     techList: ['html', 'css', 'javascript', 'react'],
     gitLink: 'https://github.com/libeja/JavaScript-Calculator',
@@ -124,6 +138,7 @@ export const moreProjects = [
   },
   {
     name: 'Pomodoro Timer',
+    projectUrl: 'pomodoro-timer',
     img: require(assetsDirectory + 'pomodoro.png'),
     techList: ['javascript', 'html', 'css'],
     gitLink: 'http://codepen.io/jugglnaut/pen/VmzdpK',
@@ -132,6 +147,7 @@ export const moreProjects = [
   },
   {
     name: 'Meteorite Landings with D3.js',
+    projectUrl: 'd3-meteorite',
     img: require(assetsDirectory + 'meteorite-landings.png'),
     techList: ['javascript', 'D3', 'Webpack\u00a02'],
     gitLink: 'https://github.com/libeja/d3-meteorite-landings',
@@ -140,6 +156,7 @@ export const moreProjects = [
   },
   {
     name: 'Heatmap with D3.js',
+    projectUrl: 'd3-heatmap',
     img: require(assetsDirectory + 'heat-map.png'),
     techList: ['javascript', 'D3', 'Webpack\u00a02'],
     gitLink: 'https://github.com/libeja/d3-heat-map',
@@ -149,6 +166,7 @@ export const moreProjects = [
   },
   {
     name: 'URL Shortening Microservice',
+    projectUrl: 'url-shortening-ms',
     img: require(assetsDirectory + 'url-shortener.png'),
     techList: ['javascript', 'react', 'node', 'express', 'mongoDB'],
     gitLink: 'https://github.com/libeja/url-shortener',
@@ -157,6 +175,7 @@ export const moreProjects = [
   },
   {
     name: 'Timestamp Microservice',
+    projectUrl: 'timestamp-ms',
     img: require(assetsDirectory + 'timestamp.png'),
     techList: ['javascript', 'react', 'fullstack'],
     gitLink: 'https://github.com/libeja/timestamp-microservice',
@@ -166,6 +185,7 @@ export const moreProjects = [
   },
   {
     name: 'Request Header Parser Microservice',
+    projectUrl: 'request-header-parser-ms',
     img: require(assetsDirectory + 'req-header.png'),
     techList: ['javascript', 'react', 'fullstack'],
     gitLink: 'https://github.com/libeja/req-header-parser-ms',
@@ -174,6 +194,7 @@ export const moreProjects = [
   },
   {
     name: 'Scatterplot Graph with D3.js',
+    projectUrl: 'd3-scatterplot',
     img: require(assetsDirectory + 'scatterplot.png'),
     techList: ['javascript', 'react', 'fullstack', 'D3'],
     gitLink: 'https://github.com/libeja/d3-scatterplot-graph',
@@ -182,6 +203,7 @@ export const moreProjects = [
   },
   {
     name: 'Force Directed Graph with D3.js',
+    projectUrl: 'd3-force-directed-graph',
     img: require(assetsDirectory + 'force-directed-graph.png'),
     techList: ['javascript', 'react', 'fullstack', 'D3'],
     gitLink: 'https://github.com/libeja/d3-force-directed-graph',
@@ -190,6 +212,7 @@ export const moreProjects = [
   },
   {
     name: 'Bar Chart with D3.js',
+    projectUrl: 'd3-barchart',
     img: require(assetsDirectory + 'bar-chart.png'),
     techList: ['javascript', 'react', 'D3'],
     gitLink: 'https://github.com/libeja/d3-bar-chart',
@@ -199,6 +222,7 @@ export const moreProjects = [
   },
   {
     name: 'Random Quote Machine',
+    projectUrl: 'random-quote-machine',
     img: require(assetsDirectory + 'random-quote-machine.png'),
     techList: ['javascript', 'html', 'css'],
     gitLink: 'http://codepen.io/jugglnaut/pen/rrOPxY/',
@@ -208,6 +232,7 @@ export const moreProjects = [
   },
   {
     name: 'Wikipedia Viewer',
+    projectUrl: 'wikipedia-viewer',
     img: require(assetsDirectory + 'wikipedia-viewer.png'),
     techList: ['javascript', 'html', 'css'],
     gitLink: 'http://codepen.io/jugglnaut/pen/GjWVdg',
@@ -216,6 +241,7 @@ export const moreProjects = [
   },
   {
     name: 'Twitch.tv JSON API',
+    projectUrl: 'twitchtv-api',
     img: require(assetsDirectory + 'twitch-api.png'),
     techList: ['javascript', 'html', 'css'],
     gitLink: 'https://codepen.io/jugglnaut/pen/PGRqQB',
@@ -224,6 +250,7 @@ export const moreProjects = [
   },
   {
     name: 'Local Weather',
+    projectUrl: 'local-weather',
     img: require(assetsDirectory + 'local-weather.png'),
     techList: ['javascript', 'html', 'css'],
     gitLink: 'http://codepen.io/jugglnaut/pen/QKEPRR',

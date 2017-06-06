@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/projects.scss';
 
 const Project = (props) => {
@@ -18,12 +19,12 @@ const Project = (props) => {
         {props.name}
       </div>
       <div className='project-image-container'>
-        <a href={props.liveLink} target='_blank'>
+        <Link to={props.projectUrl}>
           <div className='project-page-overlay'>
-            <span className='overlay-text'>Click here to see more about this project</span>
+            <span className='overlay-text'>Click here to see more about this project <i className="fa fa-chevron-right" aria-hidden="true"></i><i className="fa fa-chevron-right" aria-hidden="true"></i></span>
           </div>
           <div style={{ backgroundImage: `url(${props.img})`}} className='project' />
-        </a>
+        </Link>
       </div>
       <div className='project-links'>
         <a href={props.liveLink} target='_blank'>Live Site</a> / 

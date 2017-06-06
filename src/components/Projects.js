@@ -16,6 +16,7 @@ const createList = (projectArray, type) => {
       return <Project
         key={project.name}
         name={project.name}
+        projectUrl={project.projectUrl}
         img={project.img}
         techList={project.techList}
         gitLink={project.gitLink}

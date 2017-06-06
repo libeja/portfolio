@@ -89,6 +89,19 @@
   text-decoration: underline;
 }
 
+.view-link {
+  color: $color-red;
+  font-size: 12px;
+}
+
+.view-link:hover {
+  color: #000;
+}
+
+html.can-touch .view-link:hover {
+  color: $color-red;
+}
+
 // small screen styles
 @media screen and (max-width: 620px) {
   .about {
