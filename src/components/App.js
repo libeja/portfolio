@@ -6,6 +6,7 @@ import Navigation from './Navigation';
 import About from './About';
 import Projects from './Projects';
 import Footer from './Footer';
+import ProjectPage from './ProjectPage';
 
 // configures react-scrollable-anchor
 import { configureAnchors } from 'react-scrollable-anchor'
@@ -29,11 +30,11 @@ class App extends Component {
       </div>
     );
 
-    const ProjectPage = ({ match }) => (
+    /*const ProjectPage = ({ match }) => (
       <div>
         <h1>{match.params.projectUrl}</h1>
       </div>
-    );
+    );*/
 
     return (
       <div className='wrapper'>

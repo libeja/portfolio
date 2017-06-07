@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Headroom from 'react-headroom';
+import PropTypes from 'prop-types';
 import '../styles/navigation.scss';
 
 // use <a> tags for home page so that scroll to anchor works
@@ -98,7 +99,7 @@ class NavBar extends Component {
 }
 
 NavBar.contextTypes = {
-  router: React.PropTypes.object
+  router: PropTypes.object
 }
 
 export default NavBar;
