@@ -64,7 +64,6 @@ class NavBar extends Component {
 
   render() {
     const currentPath = this.context.router.route.location.pathname;
-    console.log(currentPath);
     return (
       <Headroom 
         disableInlineStyles 

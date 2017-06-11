@@ -48,10 +48,11 @@ var config = {
 };
 
 if (process.env.NODE_ENV === 'production') {
+  delete config.devtool;
   config.plugins.push(
     new webpack.DefinePlugin({
       'process.env': {
-        'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+        'NODE_ENV': JSON.stringify("production")
       }
     }),
     new webpack.optimize.UglifyJsPlugin()
