@@ -24,7 +24,7 @@ const About = () => {
         <p>
           This portfolio page is a single page React application, bundled and optimized with Webpack&nbsp;2. Client-side routing with React Router 4. Check out the <a target="_blank" href="https://github.com/libeja/portfolio/tree/master/src">source code</a>.
         </p>
-        <p>Download my printer-friendly traditional resume <a href='src/assets/resume.pdf' download='resume.pdf'>here</a>.</p>
+        <p>Download my printer-friendly traditional resume <a href='https://github.com/libeja/portfolio/raw/master/src/assets/resume.pdf' download='resume.pdf'>here</a>.</p>
       </div>    
       <div className="education-section">
       <h4>Education and Certificates:</h4>

@@ -5,7 +5,7 @@ import { showcaseProjects, moreProjects } from '../projectList';
 import '../styles/projectPage.scss';
 
 const LinkToPortfolio = () => (
-  <Link className='portfolio-link' to='/#projects'>
+  <Link className='portfolio-link' to='/portfolio/#projects'>
     <i className="fa fa-angle-left" aria-hidden="true"></i>
     <i className="fa fa-angle-left" aria-hidden="true"></i>
     {' '}Back to portfolio
@@ -49,7 +49,6 @@ const ProjectPage = (props) => {
       return projectUrl === project.projectUrl;
     });
   }
-
   return (
     <div className='project-page'>
 
@@ -63,7 +62,6 @@ const ProjectPage = (props) => {
         Check out the live site
       </ExternalLink>
       <img className='project-image-large' src={project.img} />
-
     
       <ExternalLink url={project.gitLink}>
         Check out the project source code

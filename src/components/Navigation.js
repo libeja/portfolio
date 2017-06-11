@@ -6,18 +6,18 @@ import '../styles/navigation.scss';
 
 // use <a> tags for home page so that scroll to anchor works
 const navLinks_homePage = [
-  <li key='home'><a href='/#home'>Home</a></li>,
-  <li key='projects'><a href='/#projects'>Projects</a></li>,
-  <li key='about'><a href='/#about'>About</a></li>,
-  <li key='contacts'><a href='/#contact'>Contact</a></li>
+  <li key='home'><a href='#home'>Home</a></li>,
+  <li key='projects'><a href='#projects'>Projects</a></li>,
+  <li key='about'><a href='#about'>About</a></li>,
+  <li key='contacts'><a href='#contact'>Contact</a></li>
 ];
 
 // use <Link> when on a project page to avoid reloading page
 const navLinks_projectPage = [
-  <li key='home'><Link to='/#home'>Home</Link></li>,  
-  <li key='projects'><Link to='/#projects'>Projects</Link></li>,
-  <li key='about'><Link to='/#about'>About</Link></li>,
-  <li key='contacts'><Link to='/#contact'>Contact</Link></li>
+  <li key='home'><Link to='/portfolio/#home'>Home</Link></li>,  
+  <li key='projects'><Link to='/portfolio/#projects'>Projects</Link></li>,
+  <li key='about'><Link to='/portfolio/#about'>About</Link></li>,
+  <li key='contacts'><Link to='/portfolio/#contact'>Contact</Link></li>
 ];
 
 class NavBar extends Component {
@@ -64,6 +64,7 @@ class NavBar extends Component {
 
   render() {
     const currentPath = this.context.router.route.location.pathname;
+    console.log(currentPath);
     return (
       <Headroom 
         disableInlineStyles 
@@ -80,7 +81,7 @@ class NavBar extends Component {
           onClick={this.toggleSlide}
         >
         
-          {currentPath === '/' ? navLinks_homePage : navLinks_projectPage}
+          {currentPath === '/portfolio/' ? navLinks_homePage : navLinks_projectPage}
         </div>
         
         {/* wide links */}
@@ -92,7 +93,7 @@ class NavBar extends Component {
             onClick={this.toggleSlide}
             ref={(hamburgerIcon) => {this.hamburgerIcon = hamburgerIcon}}            
           ></i>
-          {currentPath === '/' ? navLinks_homePage : navLinks_projectPage}
+          {currentPath === '/portfolio/' ? navLinks_homePage : navLinks_projectPage}
         </div>
       </nav>
       </Headroom>
