@@ -3,7 +3,10 @@ import '../styles/about.scss';
 
 import ScrollableAnchor from 'react-scrollable-anchor';
 
+const assetsDirectory = '../assets/';
+
 const About = () => {
+  // console.log(require(assetsDirectory + 'resume.pdf'));
   return (
     <section className='about'>
       <ScrollableAnchor id='about'>
@@ -19,8 +22,9 @@ const About = () => {
         fantasy books, watching movies, seeing music, camping, biking, juggling and contact juggling.
         </p>
         <p>
-          This portfolio page is a full-fledged React application, bundled and optimized with Webpack&nbsp;2. Client-side routing with React Router 4. Check out the <a target="_blank" href="https://github.com/libeja/portfolio/tree/master/src">source code</a>.
+          This portfolio page is a single page React application, bundled and optimized with Webpack&nbsp;2. Client-side routing with React Router 4. Check out the <a target="_blank" href="https://github.com/libeja/portfolio/tree/master/src">source code</a>.
         </p>
+        <p>Download my printer-friendly traditional resume <a href='src/assets/resume.pdf' download='resume.pdf'>here</a>.</p>
       </div>    
       <div className="education-section">
       <h4>Education and Certificates:</h4>
@@ -48,12 +52,11 @@ const About = () => {
         </div>
         <div className="other-skills-container">
           <div>
-          <span className="other-skills"><span className="bold underline">Other Skills</span>: Redux, Webpack 2, Git</span>
-          <span className="other-skills"><span className="bold underline">Learning</span>: Node.js, MongoDB, Express.js</span>
+            <span className="other-skills"><span className="bold underline">Other Skills</span>: Node.js, MongoDB, Express.js</span>
+            <span className="other-skills move-right">Redux, Git</span>
           </div>
         </div>
       </div>
-
     </section>
   );
 }

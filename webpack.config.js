@@ -28,10 +28,10 @@ module.exports = {
         use: "file-loader"
       },
       {
-        test: /\.(jpg|gif|png)$/,
+        test: /\.(jpg|gif|png|pdf)$/,
         use: 'file-loader?name=[name].[ext]',
         include: path.join(__dirname, 'src/assets')
-      }
+      },
     ]
   },
   devServer: {

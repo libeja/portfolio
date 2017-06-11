@@ -27,7 +27,6 @@ class Header extends Component {
       this.clouds.startClouds();
       this.setState({ windowIsFocused: true })
     }
-    console.log('focus');
   }
 
   onWindowBlur() {
@@ -35,8 +34,6 @@ class Header extends Component {
       this.clouds.stopClouds();
       this.setState({ windowIsFocused: false })
     }
-    console.log('blur');
-  
   }
 
   componentDidMount() {
@@ -48,10 +45,11 @@ class Header extends Component {
     this.clouds.startClouds();
   }
 
-  componentWillUnmout() {
-    window.removeEventListener('blur', this.onWindowBlur);
-    window.removeEventListener('focus', this.onWindowFocus);
-  }
+  // componentWillUnmout() {
+  //   console.log('unmounting');
+  //   window.removeEventListener('blur', this.onWindowBlur);
+  //   window.removeEventListener('focus', this.onWindowFocus);
+  // }
 
   render() {
     return (

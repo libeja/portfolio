@@ -10,7 +10,20 @@ export const showcaseProjects = [
     gitLink: 'https://github.com/libeja/pinbored',
     liveLink: 'https://pinbored.herokuapp.com/',
     description: 'Final full stack application for freeCodeCamp\'s back end certification. Pin and like images' + 
-    ' to a multi-user communal board. Authenticates with Twitter.'
+    ' to a multi-user communal board. Authenticates with Twitter.',
+    longDescription: [
+      'This project uses authentication strategy with Passport.js that allows users to sign in. The database was organized with a User and Pin Mongoose model. The pin record in the database contains an array that holds all the users that have liked that pin. The client uses this array to count likes, and to see if the current user has already liked that particular pin.',
+      "One challenge I ran into with this project included trouble shooting someone else's library when I did not fully understand it's implementation. I used Masonry.js in order to create a Pinterest style layout that automatically places pins to maximize pin density. I noticed an issue for pins that loaded the broken link image. I had the client handle broken images, through the React <Pin> component. The component will inject the broken image jpeg when the <img> receives an error. The problem that occurred was Masonry was arranging the pin before it had it's final size.To fix this issue, I ensured that each pin had minimum dimensions.",
+      "I will admit that it look me building over 10 React projects to realize that I was deploying builds that were still development builds. I learned how to configure Webpack so that it my React applications are now optimized production builds."
+    ],
+    userStories: [
+      'As an unauthenticated user, I can login with Twitter.',
+      'As an authenticated user, I can link to images.',
+      'As an authenticated user, I can delete images that I\'ve linked to.',
+      'As an authenticated user, I can see a Pinterest-style wall of all the images I\'ve linked to.',
+      'As an unauthenticated user, I can browse other users\' walls of images.',
+      'As an authenticated user, if I upload an image that is broken, it will be replaced by a placeholder image.'
+    ]
   },
   {
     name: 'The Voting Booth',
@@ -19,7 +32,19 @@ export const showcaseProjects = [
     techList: ['html', 'css', 'javascript', 'react', 'react router', 'mongoDB', 'node', 'express'],
     gitLink: 'https://github.com/libeja/voting-app',
     liveLink: 'https://fcc-voting-booth.herokuapp.com/',
-    description: 'Create polls that other users can vote on.'
+    description: 'Create polls that other users can vote on.',
+    longDescription: [
+      
+    ],
+    userStories: [
+      "As an authenticated user, I can keep my polls and come back later to access them.",
+      "As an authenticated user, I can share my polls with my friends.",
+      "As an authenticated user, I can see the aggregate results of my polls.",
+      "As an authenticated user, I can delete polls that I decide I don't want anymore.",
+      "As an authenticated user, I can create a poll with any number of possible items.",
+      "As an unauthenticated or authenticated user, I can see and vote on everyone's polls.",
+      "As an unauthenticated or authenticated user, I can see the results of polls in chart form. (This could be implemented using Chart.js or Google Charts.)"
+    ]
   },
   {
     name: 'The Book Club',
@@ -28,7 +53,18 @@ export const showcaseProjects = [
     techList: ['html', 'css', 'javascript', 'react', 'react router', 'mongoDB', 'node', 'express'],
     gitLink: 'https://github.com/libeja/book-trading-club',
     liveLink: 'https://the-book-club.herokuapp.com/',
-    description: 'Full stack app. Trade books with other users. Created custom login and authentication'
+    description: 'Full stack app. Trade books with other users. Created custom login and authentication',
+    longDescription: [
+      "This full stack application was written using React, React Router, Express, Node, and MongoDb",
+      "Users can see all books in every user's collection and see whether there is a pending trade on that book. If a user is authenticated, the user can request a trade. When the other user accepts the trade, the ownership of the book swithes to the requestee. An authenticated user can view a small dashboard of all incoming and outgoing requests.",
+      "I pulled out all of the api logic from the components into it's own module that exports an object with methods that handle the specific api calls. This helped make the components that made calls to the server much more readable."
+    ],
+    userStories: [
+      "I can view all books posted by every user.",
+      "I can add a new book.",
+      "I can update my settings to store my full name, city, and state.",
+      "I can propose a trade and wait for the other user to accept the trade."
+    ]
   },
   {
     name: 'Nightlife Coordination App',
@@ -37,7 +73,16 @@ export const showcaseProjects = [
     techList: ['html', 'css', 'javascript', 'react', 'mongoDB', 'node', 'express'],
     gitLink: 'https://github.com/libeja/nightlife-coordination',
     liveLink: 'https://fcc-nightlife-app-jay.herokuapp.com/',
-    description: 'Select locations you will be attending. See how many users are going to different locations.'
+    description: 'Select locations you will be attending. See how many users are going to different locations.',
+    longDescription: [
+
+    ],
+    userStories: [
+      "As an unauthenticated user, I can view all bars in my area.",
+      "As an authenticated user, I can add myself to a bar to indicate I am going there tonight.",
+      "As an authenticated user, I can remove myself from a bar if I no longer want to go there.",
+      "As an unauthenticated user, when I login I should not have to search again."
+    ]
   },
   {
     name: 'Chart the Market',
@@ -46,7 +91,16 @@ export const showcaseProjects = [
     techList: ['html', 'css', 'javascript', 'react', 'mongoDB', 'node', 'express', 'socket.io'],
     gitLink: 'https://github.com/libeja/stocks',
     liveLink: 'https://fcc-chart-the-stockmarket.herokuapp.com/',
-    description: 'Fullstack project updated in real-time using socket.io.'
+    description: 'Fullstack project updated in real-time using socket.io.',
+    longDescription: [
+
+    ],
+    userStories: [
+      "I can view a graph displaying the recent trend lines for each added stock.",
+      "I can add new stocks by their symbol name.",
+      "I can remove stocks.",
+      " can see changes in real-time when any other user adds or removes a stock. For this you will need to use Web Sockets."
+    ]
   },
   {
     name: 'Dungeon Crawler Game',
@@ -55,7 +109,21 @@ export const showcaseProjects = [
     techList: ['html', 'css', 'javascript', 'react'],
     gitLink: 'https://github.com/libeja/dungeon-crawler',
     liveLink: 'https://libeja.github.io/dungeon-crawler/',
-    description: 'Rogue-like adventure inspired game. Collect items and defeat the boss.'
+    description: 'Rogue-like adventure inspired game. Collect items and defeat the boss.',
+    longDescription: [
+
+    ],
+    userStories: [
+      "I have health, a level, and a weapon. I can pick up a better weapon. I can pick up health items.",
+      "All the items and enemies on the map are arranged at random.",
+      "I can move throughout a map, discovering items.",
+      "I can move anywhere within the map's boundaries, but I can't move through an enemy until I've beaten it.",
+      "Much of the map is hidden. When I take a step, all spaces that are within a certain number of spaces from me are revealed.",
+      "When I beat an enemy, the enemy goes away and I get XP, which eventually increases my level.",
+      "When I fight an enemy, we take turns damaging each other until one of us loses. I do damage based off of my level and my weapon. The enemy does damage based off of its level. Damage is somewhat random within a range.",
+      "When I find and beat the boss, I win.",
+      "The game should be challenging, but theoretically winnable."
+    ]
   },
   {
     name: 'Game of Life',
@@ -64,7 +132,18 @@ export const showcaseProjects = [
     techList: ['html', 'css', 'javascript', 'react'],
     gitLink: 'https://github.com/libeja/game-of-life',
     liveLink: 'https://libeja.github.io/game-of-life/',
-    description: 'Simple life simulation based on John Conway\'s Game of Life.'
+    description: 'Simple life simulation based on John Conway\'s Game of Life.',
+    longDescription: [
+
+    ],
+    userStories: [
+      "When I first arrive at the game, it will randomly generate a board and start playing.",
+      " I can start and stop the board.",
+      "I can set up the board.",
+      "I can clear the board.",
+      "When I press start, the game will play out.",
+      "Each time the board changes, I can see how many generations have gone by."
+    ]
   },
   {
     name: 'Simon',
@@ -73,7 +152,20 @@ export const showcaseProjects = [
     techList: ['html', 'css', 'javascript'],
     gitLink: 'https://github.com/libeja/simon',
     liveLink: 'https://libeja.github.io/simon/',
-    description: 'Recreation of the elecronic Simon Game.'
+    description: 'Recreation of the elecronic Simon Game.',
+    longDescription: [
+
+    ],
+    userStories: [
+      "I am presented with a random series of button presses.",
+      "Each time I input a series of button presses correctly, I see the same series of button presses but with an additional step.",
+      "I hear a sound that corresponds to each button both when the series of button presses plays, and when I personally press a button.",
+      "If I press the wrong button, I am notified that I have done so, and that series of button presses starts again to remind me of the pattern so I can try again.",
+      "I can see how many steps are in the current series of button presses.",
+      "If I want to restart, I can hit a button to do so, and the game will return to a single step.",
+      "I can play in strict mode where if I get a button press wrong, it notifies me that I have done so, and the game restarts at a new random series of button presses.",
+      "I can win the game by getting a series of 20 steps correct. I am notified of my victory, then the game starts over."
+    ]
   },
   {
     name: 'Tic Tac Toe',
@@ -82,7 +174,15 @@ export const showcaseProjects = [
     techList: ['html', 'css', 'javascript'],
     gitLink: 'http://codepen.io/jugglnaut/pen/aBjBWZ',
     liveLink: 'http://codepen.io/jugglnaut/full/aBjBWZ/',
-    description: 'Player plays agains custom built AI opponent.'
+    description: 'Player plays agains custom built AI opponent.',
+    longDescription: [
+
+    ],
+    userStories: [
+      " I can play a game of Tic Tac Toe with the computer.",
+      "My game will reset as soon as it's over so I can play again.",
+      "I can choose whether I want to play as X or O."
+    ]
   },
   {
     name: 'Recipe Box',
@@ -92,7 +192,18 @@ export const showcaseProjects = [
     gitLink: 'https://github.com/libeja/recipe-box',
     liveLink: 'https://libeja.github.io/recipe-box/',
     description: 'An app created with React.js and Redux that uses localStorage to store state. '
-    + 'A user can enter, edit, or delete recipes.'
+    + 'A user can enter, edit, or delete recipes.',
+    longDescription: [
+
+    ],
+    userStories: [
+      "I can create recipes that have names and ingredients.",
+      "I can see an index view where the names of all the recipes are visible.",
+      "I can click into any of those recipes to view it.",
+      "I can edit these recipes.",
+      "I can delete these recipes.",
+      "All new recipes I add are saved in my browser's local storage. If I refresh the page, these recipes will still be there."
+    ]
   }
 ];
 
@@ -105,7 +216,14 @@ export const moreProjects = [
     techList: ['javascript', 'react', 'node', 'express'],
     gitLink: 'https://github.com/libeja/file-metadata-ms',
     liveLink: 'https://file-sizer-fcc.herokuapp.com/',
-    description: 'Node/Express app that accepts a file and returns the size of the file in JSON format'
+    description: 'Node/Express app that accepts a file and returns the size of the file in JSON format',
+    longDescription: [
+
+    ],
+    userStories: [
+      "I can submit a FormData object that includes a file upload.",
+      "When I submit something, I will receive the file size in bytes within the JSON response"
+    ]
   },
   {
     name: 'Image Search Abstraction Layer',
@@ -115,7 +233,15 @@ export const moreProjects = [
     gitLink: 'https://github.com/libeja/image-search',
     liveLink: 'https://fccapi-imagesearch.herokuapp.com/',
     description: 'This API microservice will shorten a valid URL. The shortened URLs are stored in a MongoDB database. '
-    + 'Use API endpoints to redirect to URLS'
+    + 'Use API endpoints to redirect to URLS',
+    longDescription: [
+
+    ],
+    userStories: [
+      "I can get the image URLs, alt text and page urls for a set of images relating to a given search string.",
+      "I can paginate through the responses by adding a ?offset=2 parameter to the URL.",
+      "I can get a list of the most recently submitted search strings."
+    ]
   },
   {
     name: 'Markdown Previewer',
@@ -125,7 +251,14 @@ export const moreProjects = [
     gitLink: 'https://github.com/libeja/markdown-previewer',
     liveLink: 'https://libeja.github.io/markdown-previewer/',
     description: 'Type text with Markdown syntax in one pane, and see it converted in real-time to '
-    + 'HTML in a second pane. Built with React.'
+    + 'HTML in a second pane. Built with React.',
+    longDescription: [
+
+    ],
+    userStories: [
+      "I can type GitHub-flavored Markdown into a text area.",
+      "I can see a preview of the output of my markdown that is updated as I type."
+    ]
   },
   {
     name: 'JavaScript Calculator',
@@ -134,7 +267,15 @@ export const moreProjects = [
     techList: ['html', 'css', 'javascript', 'react'],
     gitLink: 'https://github.com/libeja/JavaScript-Calculator',
     liveLink: 'http://codepen.io/jugglnaut/full/zoqpKp/',
-    description: 'Functioning calculator built with JavaScript'
+    description: 'Functioning calculator built with JavaScript',
+    longDescription: [
+
+    ],
+    userStories: [
+      "I can add, subtract, multiply and divide two numbers.",
+      "I can clear the input field with a clear button.",
+      "I can keep chaining mathematical operations together until I hit the equal button, and the calculator will tell me the correct output."
+    ]
   },
   {
     name: 'Pomodoro Timer',
@@ -143,7 +284,15 @@ export const moreProjects = [
     techList: ['javascript', 'html', 'css'],
     gitLink: 'http://codepen.io/jugglnaut/pen/VmzdpK',
     liveLink: 'http://codepen.io/jugglnaut/full/VmzdpK/',
-    description: 'A productivity timer that alternates between focus and break sessions.'
+    description: 'A productivity timer that alternates between focus and break sessions.',
+    longDescription: [
+
+    ],
+    userStories: [
+      "I can start a 25 minute pomodoro, and the timer will go off once 25 minutes has elapsed.",
+      "I can reset the clock for my next pomodoro.",
+      "I can customize the length of each pomodoro.",
+    ]
   },
   {
     name: 'Meteorite Landings with D3.js',
@@ -152,7 +301,13 @@ export const moreProjects = [
     techList: ['javascript', 'D3', 'Webpack\u00a02'],
     gitLink: 'https://github.com/libeja/d3-meteorite-landings',
     liveLink: 'https://libeja.github.io/d3-meteorite-landings/',
-    description: 'D3 visualization of meteorite landings across the globe using geojson and topojson data.'
+    description: 'D3 visualization of meteorite landings across the globe using geojson and topojson data.',
+    longDescription: [
+
+    ],
+    userStories: [
+
+    ]
   },
   {
     name: 'Heatmap with D3.js',
@@ -162,7 +317,15 @@ export const moreProjects = [
     gitLink: 'https://github.com/libeja/d3-heat-map',
     liveLink: 'https://libeja.github.io/d3-heat-map/',
     description: 'Request JSON data containing the global land-surface temperature from 1753 - 2015.' 
-      + 'Shows variance on a chromatic scale.'
+      + 'Shows variance on a chromatic scale.',
+    longDescription: [
+
+    ],
+    userStories: [
+      "I can see where all Meteorites landed on a world map.",
+      "I can tell the relative size of the meteorite, just by looking at the way it's represented on the map.",
+      "I can mouse over the meteorite's data point for additional data."
+    ]
   },
   {
     name: 'URL Shortening Microservice',
@@ -171,7 +334,15 @@ export const moreProjects = [
     techList: ['javascript', 'react', 'node', 'express', 'mongoDB'],
     gitLink: 'https://github.com/libeja/url-shortener',
     liveLink: 'https://urlshorten-fcc.herokuapp.com/',
-    description: 'This API microservice will shorten a valid URL. The shortened URLs are stored in a MongoDB database.'
+    description: 'This API microservice will shorten a valid URL. The shortened URLs are stored in a MongoDB database.',
+    longDescription: [
+
+    ],
+    userStories: [
+      "I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.",
+      "If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.",
+      "When I visit that shortened URL, it will redirect me to my original link."
+    ]
   },
   {
     name: 'Timestamp Microservice',
@@ -181,7 +352,15 @@ export const moreProjects = [
     gitLink: 'https://github.com/libeja/timestamp-microservice',
     liveLink: 'https://fcc-timestamper-ms.herokuapp.com/',
     description: 'API endpoint that accepts a string or Unix '
-      + 'timestamp and returns a date in both string and Unix timestamp format as a JSON object.'
+      + 'timestamp and returns a date in both string and Unix timestamp format as a JSON object.',
+    longDescription: [
+
+    ],
+    userStories: [
+      "I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016).",
+      "If it does, it returns both the Unix timestamp and the natural language form of that date.",
+      "If it does not contain a date or Unix timestamp, it returns null for those properties."
+    ]
   },
   {
     name: 'Request Header Parser Microservice',
@@ -190,7 +369,13 @@ export const moreProjects = [
     techList: ['javascript', 'react', 'fullstack'],
     gitLink: 'https://github.com/libeja/req-header-parser-ms',
     liveLink: 'https://req-header-ms.herokuapp.com/',
-    description: 'API endpoint that parses client header information and returns the parsed information as a JSON object.'
+    description: 'API endpoint that parses client header information and returns the parsed information as a JSON object.',
+    longDescription: [
+
+    ],
+    userStories: [
+      "I can get the IP address, language and operating system for my browser."
+    ]
   },
   {
     name: 'Scatterplot Graph with D3.js',
@@ -199,7 +384,14 @@ export const moreProjects = [
     techList: ['javascript', 'react', 'fullstack', 'D3'],
     gitLink: 'https://github.com/libeja/d3-scatterplot-graph',
     liveLink: 'https://libeja.github.io/d3-scatterplot-graph/',
-    description: '2 dimensional data visualization of Tour de France doping allegations vs. finishing time.'
+    description: '2 dimensional data visualization of Tour de France doping allegations vs. finishing time.',
+    longDescription: [
+
+    ],
+    userStories: [
+      "I can see performance time visualized in a scatterplot graph.",
+      "I can mouse over a plot to see a tooltip with additional details."
+    ]
   },
   {
     name: 'Force Directed Graph with D3.js',
@@ -208,7 +400,14 @@ export const moreProjects = [
     techList: ['javascript', 'react', 'fullstack', 'D3'],
     gitLink: 'https://github.com/libeja/d3-force-directed-graph',
     liveLink: 'https://libeja.github.io/d3-force-directed-graph/',
-    description: 'App makes an AJAX request and visualizes JSON as a force-directed graph to show national contiguity'
+    description: 'App makes an AJAX request and visualizes JSON as a force-directed graph to show national contiguity',
+    longDescription: [
+
+    ],
+    userStories: [
+      "I can see a Force-directed Graph that shows which countries share borders.",
+      "I can see each country's flag on its node."
+    ]
   },
   {
     name: 'Bar Chart with D3.js',
@@ -218,7 +417,14 @@ export const moreProjects = [
     gitLink: 'https://github.com/libeja/d3-bar-chart',
     liveLink: 'https://libeja.github.io/d3-bar-chart/',
     description: 'App makes an AJAX request for JSON data from the Federal Reserve Economic Data and ' 
-      + 'then visualizes that data using D3.js.'
+      + 'then visualizes that data using D3.js.',
+    longDescription: [
+
+    ],
+    userStories: [
+      "I can see US Gross Domestic Product by quarter, over time.",
+      "I can mouse over a bar and see a tooltip with the GDP amount and exact year and month that bar represents."
+    ]
   },
   {
     name: 'Random Quote Machine',
@@ -228,7 +434,14 @@ export const moreProjects = [
     gitLink: 'http://codepen.io/jugglnaut/pen/rrOPxY/',
     liveLink: 'http://codepen.io/jugglnaut/full/rrOPxY/',
     description: 'App generates a random quote from received AJAX request from the forismatic API. ' 
-      + 'User can request more, and tweet the quotes.'
+      + 'User can request more, and tweet the quotes.',
+    longDescription: [
+
+    ],
+    userStories: [
+      "I can click a button to show me a new random quote.",
+      "I can press a button to tweet out a quote."
+    ]
   },
   {
     name: 'Wikipedia Viewer',
@@ -237,7 +450,14 @@ export const moreProjects = [
     techList: ['javascript', 'html', 'css'],
     gitLink: 'http://codepen.io/jugglnaut/pen/GjWVdg',
     liveLink: 'http://codepen.io/jugglnaut/full/GjWVdg/',
-    description: 'Utilized Wikipedia’s API to search for Wikipedia articles and display within the interface.'
+    description: 'Utilized Wikipedia’s API to search for Wikipedia articles and display within the interface.',
+    longDescription: [
+
+    ],
+    userStories: [
+      "I can search Wikipedia entries in a search box and see the resulting Wikipedia entries.",
+      "I can click a button to see a random Wikipedia entry."
+    ]
   },
   {
     name: 'Twitch.tv JSON API',
@@ -246,15 +466,32 @@ export const moreProjects = [
     techList: ['javascript', 'html', 'css'],
     gitLink: 'https://codepen.io/jugglnaut/pen/PGRqQB',
     liveLink: 'https://codepen.io/jugglnaut/full/PGRqQB',
-    description: 'Use the Twitch API to see which users are currently streaming.'
+    description: 'Use the Twitch API to see which users are currently streaming.',
+    longDescription: [
+
+    ],
+    userStories: [
+      "I can see whether Free Code Camp is currently streaming on Twitch.tv.",
+      "I can click the status output and be sent directly to the Free Code Camp's Twitch.tv channel.",
+      "if a Twitch user is currently streaming, I can see additional details about what they are streaming.",
+      "I will see a placeholder notification if a streamer has closed their Twitch account (or the account never existed). You can verify this works by adding brunofin and comster404 to your array of Twitch streamers."
+    ]
   },
   {
     name: 'Local Weather',
     projectUrl: 'local-weather',
     img: require(assetsDirectory + 'local-weather.png'),
     techList: ['javascript', 'html', 'css'],
-    gitLink: 'http://codepen.io/jugglnaut/pen/QKEPRR',
-    liveLink: 'http://codepen.io/jugglnaut/full/QKEPRR/',
-    description: 'Requests weather data from OpenWeatherMap\'s API and displays the local weather based on client location.'
+    gitLink: 'https://github.com/libeja/local-weather',
+    liveLink: 'https://libeja.github.io/local-weather/index.html',
+    description: 'Requests weather data from OpenWeatherMap\'s API and displays the local weather based on client location.',
+    longDescription: [
+
+    ],
+    userStories: [
+      "I can see the weather in my current location.",
+      "I can see a different icon or background image (e.g. snowy mountain, hot desert) depending on the weather.",
+      "I can push a button to toggle between Fahrenheit and Celsius."
+    ]
   },
 ];

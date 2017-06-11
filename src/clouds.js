@@ -106,7 +106,7 @@ export default (sectionRef) => {
 
     // create a 1 in 3 chance the next cloud will
     // be colored
-    var randomNumber = Math.floor(Math.random() * 3);
+    var randomNumber = Math.floor(Math.random() * 2);
     if (randomNumber == 0) {
       cloudStyle += "color: #" + generateColor() + ";";
     }

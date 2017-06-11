@@ -22,7 +22,6 @@ const ExternalLink = (props) => (
   </div>
 );
 
-
 /**
  * Use scroll restoration to reset window to top
  * from react router docs: https://reacttraining.com/react-router/web/guides/scroll-restoration

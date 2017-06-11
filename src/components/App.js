@@ -1,3 +1,10 @@
+/**
+ * TODOS:
+ * - add next/previous arrows to individual project page
+ * - replace detecttouch.js with modernizr-touchevents
+ */
+
+
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 

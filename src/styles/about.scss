@@ -76,10 +76,15 @@
 }
 
 .other-skills {
+  display: block;
   width: 90%;
   display: block;
   text-align: left;
   line-height: 1.6;
+}
+
+.move-right {
+  margin-left: 95px;
 }
 
 .bold {
@@ -104,6 +109,9 @@ html.can-touch .view-link:hover {
 
 // small screen styles
 @media screen and (max-width: 620px) {
+  .move-right {
+  margin-left: 77px;
+}
   .about {
     font-size: .8em;
   }

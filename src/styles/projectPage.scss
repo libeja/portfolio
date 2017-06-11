@@ -1,0 +1,79 @@
+@import 'variables';
+
+.project-page {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  p, li {
+    font-weight: 200;
+  }
+  h1 {
+    letter-spacing: .2em;    
+  }
+  h3 {
+    letter-spacing: .2em;
+    font-weight: 300;
+  }
+  h4 {
+    font-weight: 400;
+    text-align: center;
+    width: 80%;
+    max-width: 550px;
+    margin: 15px auto 20px auto;
+  }
+
+  a {
+    color: $color-red;
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  .external-link {
+    margin-bottom: 10px;
+    font-size: 1em;  
+  }
+}
+
+.project-image-large {
+  margin: 20px 0;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: -3px 3px 10px #333;  
+  font-size: .9em;
+}
+
+.portfolio-link {
+  margin: 20px 0;
+  text-align: left;
+  display: block;
+  text-decoration: none;
+  border: 0;
+}
+
+.project-user-stories-section {
+  margin-top: 20px;
+}
+
+.user-stories-container {
+  max-width: 700px;
+  margin: 0 auto;
+  width: 90%; 
+  // text-align: left;
+}
+
+.user-stories {
+  padding: 0;
+  margin: 0 auto;
+
+  li {
+    text-align: left;
+    // width: 75%;
+    margin: 0 auto 10px auto;
+  }
+}
+
+.project-description-section {
+  margin: 40px auto 30px auto;
+  // width: 80%;
+  // max-width: 700px;
+}
