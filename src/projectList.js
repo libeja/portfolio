@@ -32,9 +32,10 @@ export const showcaseProjects = [
     techList: ['html', 'css', 'javascript', 'react', 'react router', 'mongoDB', 'node', 'express'],
     gitLink: 'https://github.com/libeja/voting-app',
     liveLink: 'https://fcc-voting-booth.herokuapp.com/',
-    description: 'Create polls that other users can vote on.',
+    description: 'Full stack application that allows authenticated users to create custom polls that any user can vote on.',
     longDescription: [
-      
+      "This full stack application allows all users to view and vote on all polls posted by registered users. Users must sign up and sign in in order to create a poll. Passport.js was used to implement a local strategy of authentication where a users information was stored in a remote database (MongoDB). Passwords are encrypted using bcrypt before saving into the database.",
+      "The results of the polls are visualized as a pie chart using the Chart.js library. The front end was built with React. The Rest API was build with Express/Node.js"
     ],
     userStories: [
       "As an authenticated user, I can keep my polls and come back later to access them.",
@@ -91,7 +92,7 @@ export const showcaseProjects = [
     techList: ['html', 'css', 'javascript', 'react', 'mongoDB', 'node', 'express', 'socket.io'],
     gitLink: 'https://github.com/libeja/stocks',
     liveLink: 'https://fcc-chart-the-stockmarket.herokuapp.com/',
-    description: 'Fullstack project updated in real-time using socket.io.',
+    description: 'Full stack multi-user application updated in real-time using Websockets and socket.io.',
     longDescription: [
 
     ],
@@ -111,7 +112,11 @@ export const showcaseProjects = [
     liveLink: 'https://libeja.github.io/dungeon-crawler/',
     description: 'Rogue-like adventure inspired game. Collect items and defeat the boss.',
     longDescription: [
-
+      "A random dungeon is created and the player must collect weapons and armor to become stronger in order to beat the enemies. The player gets stronger when leveling up. The boss is hidden in one room that is locked with a key the player must find somewhere in the dungeon.",
+      "One of the more challenging aspects of this project was coming up with the algorithm that generates the dungeon.",
+      "\"To understand recursion, you must first understand recursion.\"",
+      "It was through coming up with an algorithm that randomly generates a dungeon that I deeply learned how utilize recursion for my own purposes. The algorithm first places the boss room, and then chooses a direction at random (north, south, east, west) to begin building off of the rooms. Since I wanted only one room leading to the boss room, there is only one offshoot. After that, the offshoots can range from 1-3 rooms. If there is enough room for another room, the process is repeated until either a wall is hit, or another room is encountered, at which point the algorithm recurses back and performs the same process with the next recently created room. Once the dungeon is built, the amount of hollowed out space is counted, and if it is too small, the process begins again.",
+      "The visualization was implemented using React. The game board is represented using a 2 dimensional array. A second array which stores whether the area has been discovered or not is consulted when displaying in order to simulate the \"fog of war\" effect."
     ],
     userStories: [
       "I have health, a level, and a weapon. I can pick up a better weapon. I can pick up health items.",
@@ -174,7 +179,7 @@ export const showcaseProjects = [
     techList: ['html', 'css', 'javascript'],
     gitLink: 'http://codepen.io/jugglnaut/pen/aBjBWZ',
     liveLink: 'http://codepen.io/jugglnaut/full/aBjBWZ/',
-    description: 'Player plays agains custom built AI opponent.',
+    description: 'A recreation of a classic game. Play against a custom built AI opponent.',
     longDescription: [
 
     ],

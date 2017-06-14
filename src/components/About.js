@@ -14,15 +14,16 @@ const About = () => {
       </ScrollableAnchor>
       <div className="blurb">
         <p>
-          Hello, my name is Jay. I am based out of Portland, OR, and I am currently pursuing my
-          first job as a web developer. I love learning and solving problems.
+          Hello, my name is Jay. I am an aspiring full stack developer with one year of experience 
+          building front end, back end, and full stack web applications. I am based out of Portland, 
+          OR in the beautiful and often rainy Pacific Northwest.
         </p>
         <p>
         When I'm not taking a deep dive into the inner workings of JavaScript, I enjoy reading
-        fantasy books, watching movies, seeing music, camping, biking, juggling and contact juggling.
+        fantasy books, watching movies, seeing music, camping, biking, juggling, contact juggling, and playing guitar.
         </p>
         <p>
-          This portfolio page is a single page React application, bundled and optimized with Webpack&nbsp;2. Client-side routing with React Router 4. Check out the <a target="_blank" href="https://github.com/libeja/portfolio/tree/master/src">source code</a>.
+          This portfolio page is a single page application, built with React, bundled and optimized with Webpack&nbsp;2, and utilizes React Router 4 for client-side routing. Check out the <a target="_blank" href="https://github.com/libeja/portfolio/tree/master/src">source code</a>.
         </p>
         <p>Download my printer-friendly traditional resume <a href='https://github.com/libeja/portfolio/raw/master/src/assets/resume.pdf' download='resume.pdf'>here</a>.</p>
       </div>    
