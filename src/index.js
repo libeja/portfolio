@@ -11,7 +11,7 @@ import App from './components/App';
 import './detectTouch';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.NODE_ENV === 'production' ? '/portfolio' : null}>
     <App />
   </BrowserRouter>,
   document.getElementById('app')

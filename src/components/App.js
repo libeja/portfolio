@@ -47,7 +47,7 @@ class App extends Component {
       <div className='wrapper'>
         <Navigation />
         <Switch>
-          <Route path='/portfolio/:projectUrl' component={ProjectPage} />
+          <Route path='/:projectUrl' component={ProjectPage} />
           <Route path='/' render={HomeComponents} />
         </Switch>
         <Footer />

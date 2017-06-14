@@ -5,7 +5,7 @@ import { showcaseProjects, moreProjects } from '../projectList';
 import '../styles/projectPage.scss';
 
 const LinkToPortfolio = () => (
-  <Link className='portfolio-link' to='/portfolio/#projects'>
+  <Link className='portfolio-link' to='/#projects'>
     <i className="fa fa-angle-left" aria-hidden="true"></i>
     <i className="fa fa-angle-left" aria-hidden="true"></i>
     {' '}Back to portfolio
