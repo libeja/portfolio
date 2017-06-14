@@ -80,7 +80,7 @@ const ProjectPage = (props) => {
       {project.longDescription && project.longDescription.length > 0 &&
         <div className='project-description-section'>
           <h3>Project Description</h3>
-          {project.longDescription.map(p => <p key={p}>{p}</p>)}
+          {project.longDescription.map(p => <p dangerouslySetInnerHTML={{__html: p}} key={p}></p>)}
         </div>}
 
       

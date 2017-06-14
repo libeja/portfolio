@@ -35,7 +35,7 @@ export const showcaseProjects = [
     description: 'Full stack application that allows authenticated users to create custom polls that any user can vote on.',
     longDescription: [
       "This full stack application allows all users to view and vote on all polls posted by registered users. Users must sign up and sign in in order to create a poll. Passport.js was used to implement a local strategy of authentication where a users information was stored in a remote database (MongoDB). Passwords are encrypted using bcrypt before saving into the database.",
-      "The results of the polls are visualized as a pie chart using the Chart.js library. The front end was built with React. The Rest API was build with Express/Node.js"
+      "The results of the polls are visualized as a pie chart using the <a target='_blank' href='http://www.chartjs.org/'>Chart.js</a> library. The front end was built with React. The Rest API was build with Express/Node.js"
     ],
     userStories: [
       "As an authenticated user, I can keep my polls and come back later to access them.",
@@ -94,7 +94,9 @@ export const showcaseProjects = [
     liveLink: 'https://fcc-chart-the-stockmarket.herokuapp.com/',
     description: 'Full stack multi-user application updated in real-time using Websockets and socket.io.',
     longDescription: [
-
+      "One of the main focuses of this project was to use Websockets to create real-time two-way communication between multiple clients and server. I utilized socket.io implementation of Websockets. Utilizing socket.io emit functionality allowed me to broadcast any change on the server to all connected users. In this way I was able have the server, which was connected to the MongoDB update all users in real-time.",
+      "The <a target='_blank' href='https://www.highcharts.com/'>Highcharts</a> library was used to visualize the stock data.",
+      "One challenge that occured after this project was completed was that the yahoo stocks API stopped working. I then had to swap out the npm module that used that API for one that utilized google stocks. This required remapping many components since the received JSON data was not in a different format."
     ],
     userStories: [
       "I can view a graph displaying the recent trend lines for each added stock.",
@@ -139,7 +141,9 @@ export const showcaseProjects = [
     liveLink: 'https://libeja.github.io/game-of-life/',
     description: 'Simple life simulation based on John Conway\'s Game of Life.',
     longDescription: [
-
+      "Here's an explanation of Conway's Game of Life from John Conway himself: <a target='_blank' href='https://www.youtube.com/watch?v=E8kUJL04ELA'>youtube video</a>",
+      "Here is the description and rules of the simulation from <a target='_blank' href='https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life'>wikipedia</a>:",
+      "The universe of the Game of Life is an infinite two-dimensional orthogonal grid of square cells, each of which is in one of two possible states, alive or dead, or \"populated\" or \"unpopulated\". Every cell interacts with its eight neighbours, which are the cells that are horizontally, vertically, or diagonally adjacent. At each step in time, the following transitions occur:<ul><li>Any live cell with fewer than two live neighbours dies, as if caused by underpopulation.</li><li>Any live cell with two or three live neighbours lives on to the next generation.</li><li>Any live cell with more than three live neighbours dies, as if by overpopulation.</li><li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.<li>The initial pattern constitutes the seed of the system. The first generation is created by applying the above rules simultaneously to every cell in the seed—births and deaths occur simultaneously, and the discrete moment at which this happens is sometimes called a tick (in other words, each generation is a pure function of the preceding one). The rules continue to be applied repeatedly to create further generations.</li></li></ul>"
     ],
     userStories: [
       "When I first arrive at the game, it will randomly generate a board and start playing.",
@@ -159,7 +163,8 @@ export const showcaseProjects = [
     liveLink: 'https://libeja.github.io/simon/',
     description: 'Recreation of the elecronic Simon Game.',
     longDescription: [
-
+      "This project was the final advanced front end project for the freeCodeCamp front end certificaiton. It is a recreation of the classic electronic simon game from Milton Bradly. It fully mimics the original game's functionality and can be played in two different modes: normal and strict. In strict mode, any mistake will reset the game back to the first round.",
+      "The player wins upon reaching round 20."
     ],
     userStories: [
       "I am presented with a random series of button presses.",
@@ -181,10 +186,12 @@ export const showcaseProjects = [
     liveLink: 'http://codepen.io/jugglnaut/full/aBjBWZ/',
     description: 'A recreation of a classic game. Play against a custom built AI opponent.',
     longDescription: [
-
+      "A recreation of the classic game. Play plays against computer AI opponent. The player can choose their marker and who goes first.", 
+      "The algorithm was designed by first having the computer go through all possible moves that would win in one move, followed by two moves, etc. If the player is going to win in the next turn, the computer plays defensively. After much playtesting, it was discovered that there were several edge cases where the player can win. Defense against these edge cases were hard coded into the algorithm.",
+      "I used this project tofocused on using css animations when placing markers and drawing winning lines and explored animations and transitions using bezier curve functions"
     ],
     userStories: [
-      " I can play a game of Tic Tac Toe with the computer.",
+      "I can play a game of Tic Tac Toe with the computer.",
       "My game will reset as soon as it's over so I can play again.",
       "I can choose whether I want to play as X or O."
     ]
