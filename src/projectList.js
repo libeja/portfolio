@@ -4,7 +4,7 @@ const assetsDirectory = './assets/';
 export const showcaseProjects = [
   {
     name: 'PinBored',
-    projectUrl: 'pinBored',
+    projectUrl: 'pinbored',
     img: require(assetsDirectory + 'pinbored.png'),
     techList: ['html', 'css', 'javascript', 'react', 'react router', 'mongoDB', 'node', 'express'],
     gitLink: 'https://github.com/libeja/pinbored',

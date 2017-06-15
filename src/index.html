@@ -2,6 +2,19 @@
 <html>
 <head>
   <title>Jay Ullman | Portfolio</title>
+  <script>
+     /** 
+      * This will load the url that is in sessionStorage in order to circumvent GitHub pages
+      * restriction on rerouting
+      */
+     (function () {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+  </script>
   <script src="https://use.fontawesome.com/cd50ad1c20.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />

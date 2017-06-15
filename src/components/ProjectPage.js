@@ -49,6 +49,12 @@ const ProjectPage = (props) => {
       return projectUrl === project.projectUrl;
     });
   }
+
+  if (!project) {
+    props.history.push('/');
+    return null;
+  }
+
   return (
     <div className='project-page'>
 

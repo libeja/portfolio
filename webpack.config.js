@@ -43,6 +43,10 @@ var config = {
     new HtmlWebpackPlugin({
       template: 'src/index.html'
     }),
+    new HtmlWebpackPlugin({
+      filename: '404.html',
+      template: 'src/404.html'
+    }),
     new ExtractTextPlugin('styles.css')
   ]
 };

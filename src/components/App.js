@@ -37,12 +37,6 @@ class App extends Component {
       </div>
     );
 
-    /*const ProjectPage = ({ match }) => (
-      <div>
-        <h1>{match.params.projectUrl}</h1>
-      </div>
-    );*/
-
     return (
       <div className='wrapper'>
         <Navigation />
