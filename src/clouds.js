@@ -27,13 +27,17 @@ export default (sectionRef) => {
   const cloudCleanup = () => {
     let cloudsOnScreen = 0;
     setInterval(function () {
-      cloudsOnScreen = document.querySelectorAll('.cloud');
+      
+      const backgroundClouds = Array.prototype.slice.call(document.querySelectorAll('.background-cloud'));
+      const foregroundClouds = Array.prototype.slice.call(document.querySelectorAll('.foreground-cloud'));
+      cloudsOnScreen = backgroundClouds.concat(foregroundClouds);
+
       if (cloudsOnScreen.length > maxNumOfCloudsAllowed) {
         for (let i = 0; i < cloudsOnScreen.length; i++) {
           cloudsOnScreen[i].remove();
         }
       }
-    }, 5000);
+    }, 6000);
   };
 
   const startClouds = () => {
