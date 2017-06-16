@@ -68,41 +68,23 @@ export const showcaseProjects = [
     ]
   },
   {
-    name: 'Nightlife Coordination App',
-    projectUrl: 'nightlife',
-    img: require(assetsDirectory + 'nightlife.png'),
-    techList: ['html', 'css', 'javascript', 'react', 'mongoDB', 'node', 'express'],
-    gitLink: 'https://github.com/libeja/nightlife-coordination',
-    liveLink: 'https://fcc-nightlife-app-jay.herokuapp.com/',
-    description: 'Select locations you will be attending. See how many users are going to different locations.',
+    name: 'Chore Chart',
+    projectUrl: 'chorechart',
+    img: require(assetsDirectory + 'chore-chart.png'),
+    techList: ['html', 'css', 'javascript', 'react', 'redux'],
+    gitLink: 'https://github.com/libeja/chore-chart',
+    liveLink: 'https://libeja.github.io/chore-chart/',
+    description: 'Final Project for CS50. A chore tracker for housemates.',
     longDescription: [
-
+      "The idea was based on a system I came up with (although I may not have been the first), as a way to decide whose turn it was to do a particular chore. Whenever someone completes a chore, they put a marker next to the chore. Each person can only place one marker next to each chore. The remaining housemates then perform the chore the next time. The last person to not have done any particular chore must then complete that chore. When all housemates have completed the chore, the list resets. This ensures that everyone does the chore at least once per cycle without enforcing the particular time that someone must do it.",
+      "The app was implemented using React.js as the view library and Redux for data architecture. There is no backend, and data is persisted via local storage. The user selection box is meant to simulate who is currently logged into the system.",
+      "There are 3 main areas to the app:<ol><li>The main screen which shows a brief summary of which chores the current user hasn't completed yet for the current cycle.</li><li>The chore chart lists the chores in a table-like format. By clicking the 'complete' button, the person who is currently 'logged in' will have their token placed next to the chore, indicating that they have completed that chore for the current cycle.</li><li>The settings screen allows a user to add housemates, chores and to edit both records. There is also a delete user data option which clears the Redux store and localStorage.</li></ol>",
+      "Some additional implementation notes:<ul><li>Implemented my own modals dialogue boxes</li><li>Used flexbox to create responsive elements and components</li><li>Utilized localStorage to maintain perpetual state</li></ul>"
     ],
     userStories: [
-      "As an unauthenticated user, I can view all bars in my area.",
-      "As an authenticated user, I can add myself to a bar to indicate I am going there tonight.",
-      "As an authenticated user, I can remove myself from a bar if I no longer want to go there.",
-      "As an unauthenticated user, when I login I should not have to search again."
-    ]
-  },
-  {
-    name: 'Chart the Market',
-    projectUrl: 'stocks',
-    img: require(assetsDirectory + 'stocks.png'),
-    techList: ['html', 'css', 'javascript', 'react', 'mongoDB', 'node', 'express', 'socket.io'],
-    gitLink: 'https://github.com/libeja/stocks',
-    liveLink: 'https://fcc-chart-the-stockmarket.herokuapp.com/',
-    description: 'Full stack multi-user application updated in real-time using Websockets and socket.io.',
-    longDescription: [
-      "One of the main focuses of this project was to use Websockets to create real-time two-way communication between multiple clients and server. I utilized socket.io implementation of Websockets. Utilizing socket.io emit functionality allowed me to broadcast any change on the server to all connected users. In this way I was able have the server, which was connected to the MongoDB update all users in real-time.",
-      "The <a target='_blank' href='https://www.highcharts.com/'>Highcharts</a> library was used to visualize the stock data.",
-      "One challenge that occured after this project was completed was that the yahoo stocks API stopped working. I then had to swap out the npm module that used that API for one that utilized google stocks. This required remapping many components since the received JSON data was not in a different format."
-    ],
-    userStories: [
-      "I can view a graph displaying the recent trend lines for each added stock.",
-      "I can add new stocks by their symbol name.",
-      "I can remove stocks.",
-      " can see changes in real-time when any other user adds or removes a stock. For this you will need to use Web Sockets."
+      "This project must draw on the course's lessons. The nature of the project is entirely up to the student",
+      "You may implement your project in any language(s).",
+      "All that we ask is that you build something of interest to you, that you solve an actual problem, that you impact your community, or that you change the world."
     ]
   },
   {
@@ -130,6 +112,24 @@ export const showcaseProjects = [
       "When I fight an enemy, we take turns damaging each other until one of us loses. I do damage based off of my level and my weapon. The enemy does damage based off of its level. Damage is somewhat random within a range.",
       "When I find and beat the boss, I win.",
       "The game should be challenging, but theoretically winnable."
+    ]
+  },
+  {
+    name: 'Nightlife Coordination App',
+    projectUrl: 'nightlife',
+    img: require(assetsDirectory + 'nightlife.png'),
+    techList: ['html', 'css', 'javascript', 'react', 'mongoDB', 'node', 'express'],
+    gitLink: 'https://github.com/libeja/nightlife-coordination',
+    liveLink: 'https://fcc-nightlife-app-jay.herokuapp.com/',
+    description: 'Select locations you will be attending. See how many users are going to different locations.',
+    longDescription: [
+
+    ],
+    userStories: [
+      "As an unauthenticated user, I can view all bars in my area.",
+      "As an authenticated user, I can add myself to a bar to indicate I am going there tonight.",
+      "As an authenticated user, I can remove myself from a bar if I no longer want to go there.",
+      "As an unauthenticated user, when I login I should not have to search again."
     ]
   },
   {
@@ -197,6 +197,30 @@ export const showcaseProjects = [
     ]
   },
   {
+    name: 'Chart the Market',
+    projectUrl: 'stocks',
+    img: require(assetsDirectory + 'stocks.png'),
+    techList: ['html', 'css', 'javascript', 'react', 'mongoDB', 'node', 'express', 'socket.io'],
+    gitLink: 'https://github.com/libeja/stocks',
+    liveLink: 'https://fcc-chart-the-stockmarket.herokuapp.com/',
+    description: 'Full stack multi-user application updated in real-time using Websockets and socket.io.',
+    longDescription: [
+      "One of the main focuses of this project was to use Websockets to create real-time two-way communication between multiple clients and server. I utilized socket.io implementation of Websockets. Utilizing socket.io emit functionality allowed me to broadcast any change on the server to all connected users. In this way I was able have the server, which was connected to the MongoDB update all users in real-time.",
+      "The <a target='_blank' href='https://www.highcharts.com/'>Highcharts</a> library was used to visualize the stock data.",
+      "One challenge that occured after this project was completed was that the yahoo stocks API stopped working. I then had to swap out the npm module that used that API for one that utilized google stocks. This required remapping many components since the received JSON data was not in a different format."
+    ],
+    userStories: [
+      "I can view a graph displaying the recent trend lines for each added stock.",
+      "I can add new stocks by their symbol name.",
+      "I can remove stocks.",
+      " can see changes in real-time when any other user adds or removes a stock. For this you will need to use Web Sockets."
+    ]
+  }
+];
+
+// these projects will be revealed after clicking show more projects
+export const moreProjects = [
+  {
     name: 'Recipe Box',
     projectUrl: 'recipe-box',
     img: require(assetsDirectory + 'recipe-box.png'),
@@ -206,7 +230,6 @@ export const showcaseProjects = [
     description: 'An app created with React.js and Redux that uses localStorage to store state. '
     + 'A user can enter, edit, or delete recipes.',
     longDescription: [
-
     ],
     userStories: [
       "I can create recipes that have names and ingredients.",
@@ -216,11 +239,7 @@ export const showcaseProjects = [
       "I can delete these recipes.",
       "All new recipes I add are saved in my browser's local storage. If I refresh the page, these recipes will still be there."
     ]
-  }
-];
-
-// these projects will be revealed after clicking show more projects
-export const moreProjects = [
+  },
   {
     name: 'File Metadata Microservice',
     projectUrl: 'file-metadata-ms',
