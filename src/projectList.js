@@ -14,7 +14,6 @@ export const showcaseProjects = [
     longDescription: [
       'This project uses authentication strategy with Passport.js that allows users to sign in. The database was organized with a User and Pin Mongoose model. The pin record in the database contains an array that holds all the users that have liked that pin. The client uses this array to count likes, and to see if the current user has already liked that particular pin.',
       "One challenge I ran into with this project included trouble shooting someone else's library when I did not fully understand it's implementation. I used Masonry.js in order to create a Pinterest style layout that automatically places pins to maximize pin density. I noticed an issue for pins that loaded the broken link image. I had the client handle broken images, through the React <Pin> component. The component will inject the broken image jpeg when the <img> receives an error. The problem that occurred was Masonry was arranging the pin before it had it's final size.To fix this issue, I ensured that each pin had minimum dimensions.",
-      "I will admit that it look me building over 10 React projects to realize that I was deploying apps that were still development builds. I learned how to configure Webpack so that my React applications are now optimized production builds."
     ],
     userStories: [
       'As an unauthenticated user, I can login with Twitter.',
