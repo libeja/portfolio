@@ -185,9 +185,9 @@ export const showcaseProjects = [
     liveLink: 'http://codepen.io/jugglnaut/full/aBjBWZ/',
     description: 'A recreation of a classic game. Play against a custom built AI opponent.',
     longDescription: [
-      "A recreation of the classic game. Play plays against computer AI opponent. The player can choose their marker and who goes first.", 
+      "A recreation of the classic game. Player plays against computer AI opponent. The player chooses their marker and who goes first.", 
       "The algorithm was designed by first having the computer go through all possible moves that would win in one move, followed by two moves, etc. If the player is going to win in the next turn, the computer plays defensively. After much playtesting, it was discovered that there were several edge cases where the player can win. Defense against these edge cases were hard coded into the algorithm.",
-      "I used this project tofocused on using css animations when placing markers and drawing winning lines and explored animations and transitions using bezier curve functions"
+      "I used this project to focus on using css animations when placing markers and drawing winning lines and explored animations and transitions using bezier curve functions."
     ],
     userStories: [
       "I can play a game of Tic Tac Toe with the computer.",
