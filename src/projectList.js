@@ -333,10 +333,13 @@ export const moreProjects = [
     liveLink: 'https://libeja.github.io/d3-meteorite-landings/',
     description: 'D3 visualization of meteorite landings across the globe using geojson and topojson data.',
     longDescription: [
-
+      "This project displays a visualization of meteorite landings across the globe using the <a href='https://d3js.org/' target='_blank' D3.js data visualization library's geographic path generator and using geojson and topojson data. The radius and color of the circles visualizes the mass of the meteorite.",
+      "Hovering over each landing will display additional information about the meteorite. You can zoom and pan the map."
     ],
     userStories: [
-
+      "I can see where all Meteorites landed on a world map",
+      "I can tell the relative size of the meteorite, just by looking at the way it's represented on the map",
+      "I can mouse over the meteorite's data point for additional data"
     ]
   },
   {
