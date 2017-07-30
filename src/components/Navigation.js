@@ -6,18 +6,40 @@ import '../styles/navigation.scss';
 
 // use <a> tags for home page so that scroll to anchor works
 const navLinks_homePage = [
-  <li key='home'><a href='#home'>Home</a></li>,
-  <li key='projects'><a href='#projects'>Projects</a></li>,
-  <li key='about'><a href='#about'>About</a></li>,
-  <li key='contacts'><a href='#contact'>Contact</a></li>
+  <li key="home">
+    <a href="#home">Home</a>
+  </li>,
+  <li key="projects">
+    <a href="#projects">Projects</a>
+  </li>,
+  <li key="about">
+    <a href="#about">About</a>
+  </li>,
+  <li key="resume">
+    <Link to="/resume">Resume</Link>
+  </li>,
+  <li key="contacts">
+    <a href="#contact">Contact</a>
+  </li>
 ];
 
 // use <Link> when on a project page to avoid reloading page
 const navLinks_projectPage = [
-  <li key='home'><Link to='/#home'>Home</Link></li>,  
-  <li key='projects'><Link to='/#projects'>Projects</Link></li>,
-  <li key='about'><Link to='/#about'>About</Link></li>,
-  <li key='contacts'><Link to='/#contact'>Contact</Link></li>
+  <li key="home">
+    <Link to="/#home">Home</Link>
+  </li>,
+  <li key="projects">
+    <Link to="/#projects">Projects</Link>
+  </li>,
+  <li key="about">
+    <Link to="/#about">About</Link>
+  </li>,
+  <li key="resume">
+    <Link to="/resume">Resume</Link>
+  </li>,
+  <li key="contacts">
+    <Link to="/#contact">Contact</Link>
+  </li>
 ];
 
 class NavBar extends Component {
@@ -39,13 +61,13 @@ class NavBar extends Component {
       this.setState({ sliderIsOpen: false });
     } else {
       this.setState({ sliderIsOpen: true });
-    }  
+    }
   }
 
   // hide sidebar and menu icon when scrolling if sidebar is open
   // callback from onUnpin from headroom.js
   handleScroll() {
-    if (this.sideBar.className.indexOf('hidden') < 0 ) {
+    if (this.sideBar.className.indexOf('hidden') < 0) {
       this.sideBar.classList.toggle('hidden');
       // this.hamburgerIcon.classList.toggle('slide');
       this.toggleSlideState();
@@ -58,43 +80,41 @@ class NavBar extends Component {
     this.sideBar.classList.toggle('hidden');
     // commented out code handled with conditional rendering
     // this.hamburgerIcon.classList.toggle('slide');
-    
+
     this.toggleSlideState();
   }
 
   render() {
     const currentPath = this.context.router.route.location.pathname;
     return (
-      <Headroom 
-        disableInlineStyles 
-        onUnpin={this.handleScroll}
-        downTolerance={10}
-      >
-      <nav>
-       
-        {/* Sidebar */}
-        
-        <div 
-          ref={(sideBar) => { this.sideBar = sideBar }} 
-          className='sideBar hidden'
-          onClick={this.toggleSlide}
-        >
-        
-          {currentPath === '/' ? navLinks_homePage : navLinks_projectPage}
-        </div>
-        
-        {/* wide links */}
-        <div className='wide-nav'>
-          <i
-            className={this.state.sliderIsOpen
-                ? 'hamburger-icon fa fa-times fa-2x slide'
-                : 'hamburger-icon fa fa-bars fa-2x' } 
+      <Headroom disableInlineStyles onUnpin={this.handleScroll} downTolerance={10}>
+        <nav>
+          {/* Sidebar */}
+
+          <div
+            ref={sideBar => {
+              this.sideBar = sideBar;
+            }}
+            className="sideBar hidden"
             onClick={this.toggleSlide}
-            ref={(hamburgerIcon) => {this.hamburgerIcon = hamburgerIcon}}            
-          ></i>
-          {currentPath === '/' ? navLinks_homePage : navLinks_projectPage}
-        </div>
-      </nav>
+          >
+            {currentPath === '/' ? navLinks_homePage : navLinks_projectPage}
+          </div>
+
+          {/* wide links */}
+          <div className="wide-nav">
+            <i
+              className={
+                this.state.sliderIsOpen ? 'hamburger-icon fa fa-times fa-2x slide' : 'hamburger-icon fa fa-bars fa-2x'
+              }
+              onClick={this.toggleSlide}
+              ref={hamburgerIcon => {
+                this.hamburgerIcon = hamburgerIcon;
+              }}
+            />
+            {currentPath === '/' ? navLinks_homePage : navLinks_projectPage}
+          </div>
+        </nav>
       </Headroom>
     );
   }
@@ -102,6 +122,6 @@ class NavBar extends Component {
 
 NavBar.contextTypes = {
   router: PropTypes.object
-}
+};
 
 export default NavBar;
