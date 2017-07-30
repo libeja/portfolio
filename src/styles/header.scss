@@ -42,15 +42,8 @@
     letter-spacing: .3em;
   }
   background-color: #000;
-  // background: url('../assets/hills.jpg') no-repeat 80% fixed;
   background-size: cover;
 }
-
-// .sub-title {
-//   translateX(-50%);
-// }
-
-// header animation
 
 .animate {
   animation-duration: 5s;
@@ -78,6 +71,18 @@
 
     h2 {
       width: 280px;
+    }
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .name-container {
+    font-size: .75em;
+    padding: .5em;
+    width: 220px;
+
+    h2 {
+      width: 260px;
     }
   }
 }

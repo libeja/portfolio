@@ -1,184 +1,182 @@
 @import 'variables';
 
 nav {
-	a {
-		color: #fff;
-		text-decoration: none;
-		border: none;
-	}
-	a:visited {
-  color: #fff;
-	}
+  a {
+    color: #fff;
+    text-decoration: none;
+    border: none;
+  }
+  a:visited {
+    color: #fff;
+  }
 }
 
 .wide-nav {
-	// display: none;
+  // display: none;
   position: relative;
-	padding-top: 10px;
-	height: 50px;
-	text-align: right;
-	width: 100%;
-	// max-width: $maxPageWidth;
-	background-color: rgba(128, 128, 128, .85);
-	margin: 0 auto;
-	top: 0;
-	right: 0;
-	box-shadow: 0 3px 5px black;
-	z-index: 100;
+  padding-top: 10px;
+  height: 50px;
+  text-align: right;
+  width: 100%;
+  // max-width: $maxPageWidth;
+  background-color: rgba(128, 128, 128, .85);
+  margin: 0 auto;
+  top: 0;
+  right: 0;
+  box-shadow: 0 3px 5px black;
+  z-index: 100;
 
   li {
-		text-align: center;
-		display: none;
-		color: #fff;
-		padding: 12px;
-		padding-left: 0;
-		padding-right: 0;
-		margin-right: 20px;
-		text-transform: uppercase;
-		cursor: pointer;
-		border: 0;
-		transition: border .1s ease-in;
-		
-		&:hover {
-			border-bottom: 5px solid #fff;  
-			padding-bottom: 2px;
-			top: -3px;
-		}
-	}
+    text-align: center;
+    display: none;
+    color: #fff;
+    padding: 12px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 0;
+    transition: border .1s ease-in;
 
+    &:hover {
+      border-bottom: 5px solid #fff;
+      padding-bottom: 2px;
+      top: -3px;
+    }
+  }
 }
 
 // cancel hover effects on touchscreens
 html.can-touch .wide-nav {
-	li:hover {
-		border-bottom: 0;  
-		padding-bottom: 0;
-		top: 0;
-	}
-	a:hover {
-		color: #fff;
-	}
+  li:hover {
+    border-bottom: 0;
+    padding-bottom: 0;
+    top: 0;
+  }
+  a:hover {
+    color: #fff;
+  }
 }
 
 .sideBar {
-	position: fixed;
-	transition: $cubic-bezier;
-	
-	top: 0;
-	right: -30px;
-	width: 170px;
-	height: 200vh;
-	background: #333;
-	color: #fff;
-	z-index: 200;
-	padding-top: 50px;
+  position: fixed;
+  transition: $cubic-bezier;
 
-	li {
-		padding-left: 40px;
-		margin-bottom: 30px;
-		text-align: left;
-		list-style-type: none;
-		cursor: pointer;
-		transition: margin .2s ease-in-out;
+  top: 0;
+  right: -30px;
+  width: 170px;
+  height: 200vh;
+  background: #333;
+  color: #fff;
+  z-index: 200;
+  padding-top: 50px;
 
-		&:hover {
-			text-decoration: underline;
-			margin-left: 5px;
-		}
-	}
+  li {
+    padding-left: 40px;
+    margin-bottom: 30px;
+    text-align: left;
+    list-style-type: none;
+    cursor: pointer;
+    transition: margin .2s ease-in-out;
+
+    &:hover {
+      text-decoration: underline;
+      margin-left: 5px;
+    }
+  }
 }
 
 // cancel hover effects on touchscreens
 html.can-touch .sideBar {
-	li:hover {
-		border-bottom: 0;  
-		padding-bottom: 0;
-		top: 0;
-	}
-	a:hover {
-		color: #fff;
-		
-	}
+  li:hover {
+    border-bottom: 0;
+    padding-bottom: 0;
+    top: 0;
+  }
+  a:hover {
+    color: #fff;
+  }
 }
 
 .hamburger-icon {
-		text-align: right;
-		position: relative;
-		right: 15px;
-		z-index: 200;
-		transition: $cubic-bezier;
-	}
+  text-align: right;
+  position: relative;
+  right: 15px;
+  z-index: 200;
+  transition: $cubic-bezier;
+}
 
 // for sidebar
 .hidden {
-	-webkit-transform: translateX(150px);
-	-ms-transform: translateX(150px);
-	transform: translateX(150px);
+  -webkit-transform: translateX(150px);
+  -ms-transform: translateX(150px);
+  transform: translateX(150px);
 }
 
 // for hamburger icon
 .slide {
-	right: 150px;
+  right: 150px;
 }
 
 // Headroom.js styles
 .headroom {
-	position: relative;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
 .headroom--unfixed {
   position: relative;
-	
-	-webkit-transform: translateY(0);
-	-ms-transform: translateY(0);
+
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
   transform: translateY(0);
 }
 
 .headroom--scrolled {
-	position: relative;
+  position: relative;
   transition: transform 200ms ease-in-out;
 }
 
 .headroom--unpinned {
   position: fixed;
 
-	-webkit-transform: translateY(-110%);
-	-ms-transform: translateY(-110%);
+  -webkit-transform: translateY(-110%);
+  -ms-transform: translateY(-110%);
   transform: translateY(-110%);
 }
 .headroom--pinned {
   position: fixed;
   -webkit-transform: translateY(0%);
-	-ms-transform: translateY(0%);
+  -ms-transform: translateY(0%);
   transform: translateY(0%);
 }
 
 // when over 480px
 @media (min-width: 480px) {
-	.sideBar {
-		display: none;
-	}
-	.hamburger-icon {
-		display: none;
-	}
-	.wide-nav li {
-		display: inline-block;
-	}
+  .sideBar {
+    display: none;
+  }
+  .hamburger-icon {
+    display: none;
+  }
+  .wide-nav li {
+    display: inline-block;
+  }
 }
 // when over 960px
 @media (min-width: 960px) {
-	.wide-nav {
-		display: inline-block;
-		text-align: center;
-		li {
-			margin: 0 30px;
-		}
-	}
+  .wide-nav {
+    display: inline-block;
+    text-align: center;
+    li {
+      margin: 0 30px;
+    }
+  }
 }
 
 // for smaller screens
