@@ -22,8 +22,8 @@ const About = () => {
           movies, seeing music, camping, biking, juggling, contact juggling, and playing guitar.
         </p>
         <p>
-          This portfolio page is a single page application, built with React, bundled and optimized with Webpack&nbsp;2,
-          and utilizes React Router 4 for client-side routing. Check out the{' '}
+          This portfolio page is a single page application, built with React, bundled and optimized with Webpack, and
+          utilizes React Router for client-side routing. Check out the{' '}
           <a target="_blank" href="https://github.com/libeja/portfolio/tree/master/src">
             source code
           </a>.
