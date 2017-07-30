@@ -4,7 +4,6 @@
  * - replace detecttouch.js with modernizr-touchevents
  */
 
-
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
@@ -14,10 +13,11 @@ import About from './About';
 import Projects from './Projects';
 import Footer from './Footer';
 import ProjectPage from './ProjectPage';
+import ResumePage from './ResumePage';
 
 // configures react-scrollable-anchor
-import { configureAnchors } from 'react-scrollable-anchor'
-configureAnchors({ offset: -65 })
+import { configureAnchors } from 'react-scrollable-anchor';
+configureAnchors({ offset: -65 });
 
 // import weather-icon fonts from:
 // https://erikflowers.github.io/weather-icons/
@@ -29,24 +29,24 @@ import '../font/devicon.scss';
 
 class App extends Component {
   render() {
-    const HomeComponents = () => (
+    const HomeComponents = () =>
       <div>
         <Header />
         <Projects />
         <About />
-      </div>
-    );
+      </div>;
 
     return (
-      <div className='wrapper'>
+      <div className="wrapper">
         <Navigation />
         <Switch>
-          <Route path='/:projectUrl' component={ProjectPage} />
-          <Route path='/' render={HomeComponents} />
+          <Route path="/resume" component={ResumePage} />
+          <Route path="/:projectUrl" component={ProjectPage} />
+          <Route path="/" render={HomeComponents} />
         </Switch>
         <Footer />
       </div>
-    )
+    );
   }
 }
 
