@@ -6,7 +6,7 @@ const ResumePage = () =>
       className="resume-frame"
       src="https://drive.google.com/file/d/0B_nswDKKuanzMUpjdTVrZEVCVGc/preview"
       width="100%"
-      height="480"
+      height="600"
     />
   </div>;
 
