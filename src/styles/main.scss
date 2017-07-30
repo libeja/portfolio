@@ -1,71 +1,63 @@
 // Use html.can-touch for touch screens
 
 @import 'variables';
-
-// @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
 body {
   min-width: 260px;
   background-color: $background-color;
-  // font-family: 'Ubuntu', sans-serif;
-  font-family: -apple-system,
-    BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
-    'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue',
+    sans-serif;
   text-align: center;
   margin: 0 auto;
 }
-
-// .wrapper {
-//   max-width: $maxPageWidth;
-//   margin: 0 auto;
-//   padding: 0;
-// }
 
 a {
   padding: 0;
 }
 
 a {
-    color: $color-red;
-    transition: all .2s ease-in;
-    text-decoration: none;
-    // border-bottom: 2px solid $color-red;
-  }
+  color: $color-red;
+  transition: all .2s ease-in;
+  text-decoration: none;
+}
 
 a:visited {
   color: $color-red;
 }
 
-
 a:hover {
-      color: #000;
-      border-color: #000;
-  }
+  color: #000;
+  border-color: #000;
+}
 
 // for touch screens - removes sticky hover issue
 html.can-touch a:hover {
   color: $color-red;
-  // border-color: $color-red;
 }
 
-
-h1, h2, h3, h4, h5, h6, {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   font-family: $font-title;
 }
 
 h3 {
-	font-weight: bold;
-	color: #000;
+  font-weight: bold;
+  color: #000;
   text-transform: uppercase;
-	font-size: 20px;
-	letter-spacing: .5em;
-	font-variant: small-caps;
+  font-size: 20px;
+  letter-spacing: .5em;
+  font-variant: small-caps;
   margin-bottom: 20px;
 }
 
@@ -79,7 +71,7 @@ p {
 
 // prevent image overflowing containers
 img {
-  max-width: 100%
+  max-width: 100%;
 }
 
 button {
@@ -94,13 +86,12 @@ button {
 }
 
 /* ensures hover styles are only applied to non-touch devices */
-@media (hover:hover) {
-  button:hover, button:active {
-
+@media (hover: hover) {
+  button:hover,
+  button:active {
     position: relative;
     top: 1px;
     right: 1px;
     box-shadow: none;
   }
 }
-

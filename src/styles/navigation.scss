@@ -12,13 +12,11 @@ nav {
 }
 
 .wide-nav {
-  // display: none;
   position: relative;
   padding-top: 10px;
   height: 50px;
   text-align: right;
   width: 100%;
-  // max-width: $maxPageWidth;
   background-color: rgba(128, 128, 128, .85);
   margin: 0 auto;
   top: 0;
@@ -178,11 +176,3 @@ html.can-touch .sideBar {
     }
   }
 }
-
-// for smaller screens
-// remove sticky hover issue
-// @media (max-width: 600px) {
-//   li:hover {
-//    border: 0 !important;
-//   }
-// }

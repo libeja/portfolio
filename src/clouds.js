@@ -1,6 +1,4 @@
-
-export default (sectionRef) => {
-
+export default sectionRef => {
   // If number of clouds is greater, they will be deleted.
   // helps prevent bug of too many clouds building up when the window is not active
   const maxNumOfCloudsAllowed = 20;
@@ -9,14 +7,7 @@ export default (sectionRef) => {
   let randomCloudTimeout;
 
   function generateColor() {
-    var colors = [
-      "b6f3df",
-      "b6e9f3",
-      "b6caf3",
-      "c1b6f3",
-      "dfb6f3",
-      "f3b6e8"
-    ];
+    var colors = ['b6f3df', 'b6e9f3', 'b6caf3', 'c1b6f3', 'dfb6f3', 'f3b6e8'];
 
     var randomNumber = Math.floor(Math.random() * colors.length);
 
@@ -26,8 +17,7 @@ export default (sectionRef) => {
   // function will ensure that too many clouds don't build up when the window is inactive
   const cloudCleanup = () => {
     let cloudsOnScreen = 0;
-    setInterval(function () {
-      
+    setInterval(function() {
       const backgroundClouds = Array.prototype.slice.call(document.querySelectorAll('.background-cloud'));
       const foregroundClouds = Array.prototype.slice.call(document.querySelectorAll('.foreground-cloud'));
       cloudsOnScreen = backgroundClouds.concat(foregroundClouds);
@@ -63,12 +53,11 @@ export default (sectionRef) => {
 
   // this function is called when a cloud finishes its
   // animation style in order to keep the DOM reasonable
-  const destroyCloud = (e) => {
-    e.target.remove()
+  const destroyCloud = e => {
+    e.target.remove();
   };
 
   const createCloud = () => {
-
     // define clouds and store in an array
     const largeCloud = {
       size: 4,
@@ -90,8 +79,8 @@ export default (sectionRef) => {
 
     const cloudArray = [smallCloud, mediumCloud, largeCloud];
 
-    let cloudElement = document.createElement("div");
-    cloudElement.addEventListener("animationend", destroyCloud);
+    let cloudElement = document.createElement('div');
+    cloudElement.addEventListener('animationend', destroyCloud);
 
     // picks random number from 0 - length of cloudArray
     let randomCloud = Math.floor(Math.random() * cloudArray.length);
@@ -100,43 +89,50 @@ export default (sectionRef) => {
 
     let cloud = cloudArray[randomCloud];
 
-    cloudElement.setAttribute("class", "background-cloud");
+    cloudElement.setAttribute('class', 'background-cloud');
 
-    let cloudStyle = "top: " + randomPosition + "%; " +
-      "font-size: " + cloud.size + "em; " +
-      "z-index: " + cloud.zIndex + "; " +
-      "animation: myanimation " + cloud.speed + "s linear " +
-      randomDelay + "s;"
+    let cloudStyle =
+      'top: ' +
+      randomPosition +
+      '%; ' +
+      'font-size: ' +
+      cloud.size +
+      'em; ' +
+      'z-index: ' +
+      cloud.zIndex +
+      '; ' +
+      'animation: myanimation ' +
+      cloud.speed +
+      's linear ' +
+      randomDelay +
+      's;';
 
     // create a 1 in 3 chance the next cloud will
     // be colored
     var randomNumber = Math.floor(Math.random() * 2);
     if (randomNumber == 0) {
-      cloudStyle += "color: #" + generateColor() + ";";
+      cloudStyle += 'color: #' + generateColor() + ';';
     }
 
-    cloudElement.setAttribute("style", cloudStyle);
+    cloudElement.setAttribute('style', cloudStyle);
     sectionRef.appendChild(cloudElement);
   };
 
   // Creates one large cloud in the foreground the clips the lower
   // part of the info window - for dramatic effect
   const createForeGroundCloud = () => {
-    var cloudElement = document.createElement("div");
-    var cloudStyle = "bottom: 60%; left: -200%; font-size: 12em; z-index: 100; " +
-      "animation: myanimation 8s linear;"
+    var cloudElement = document.createElement('div');
+    var cloudStyle = 'bottom: 60%; left: -200%; font-size: 12em; z-index: 100; ' + 'animation: myanimation 8s linear;';
 
-    cloudElement.addEventListener("animationend", destroyCloud);
-    cloudElement.setAttribute("class", "foreground-cloud");
-    cloudElement.setAttribute("style", cloudStyle);
+    cloudElement.addEventListener('animationend', destroyCloud);
+    cloudElement.setAttribute('class', 'foreground-cloud');
+    cloudElement.setAttribute('style', cloudStyle);
     sectionRef.appendChild(cloudElement);
-
   };
 
   // running this module exposes these methods
   return {
     startClouds,
     stopClouds
-  }
+  };
 };
-

@@ -1,59 +1,49 @@
 @import 'variables';
 
 .footer {
-	// background-color: $color-lightGreen;
-	background-color: #000;
-	color: #fff;
-	text-align: center;
-	margin-bottom: 0;
-	padding: 30px;
-	padding-bottom: 50px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0;
+  padding: 30px;
+  padding-bottom: 50px;
 
-	h3 {
-		color: #fff;
-		margin-bottom: 20px;
-	}
+  h3 {
+    color: #fff;
+    margin-bottom: 20px;
+  }
 
-	a {
-		color: $color-green;
-		border-color: $color-green;
-	}
+  a {
+    color: $color-green;
+    border-color: $color-green;
+  }
 
-	a:visited {
-		color: $color-green;		
-	}
+  a:visited {
+    color: $color-green;
+  }
 
-	a:hover {
-		color: #fff;
-		border-color: #fff;
-		
-	}
+  a:hover {
+    color: #fff;
+    border-color: #fff;
+  }
 
-	.icons-container a {
-		margin: 0 10px;
-		position: relative;
-		transition: all .2s ease-in;
-		text-decoration: none;
-		border: 0;
+  .icons-container a {
+    margin: 0 10px;
+    position: relative;
+    transition: all .2s ease-in;
+    text-decoration: none;
+    border: 0;
 
-		&:hover {
-			top: 3px;
-		}
-	}
+    &:hover {
+      top: 3px;
+    }
+  }
 }
-// 	small {
-// 	a {
-// 		color: $color-green;
-// 	}
-// 	a:hover {
-// 		color: #fff;
-// }
 
 // cancels hover effect on touchscreens
 html.can-touch .footer {
-	a:hover {
-		color: $color-green;
-		top: 0;
-	}
+  a:hover {
+    color: $color-green;
+    top: 0;
+  }
 }
-

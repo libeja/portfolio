@@ -22,17 +22,17 @@ var config = {
       },
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        use: "url-loader"
+        use: 'url-loader'
       },
       {
         test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        use: "file-loader"
+        use: 'file-loader'
       },
       {
         test: /\.(jpg|gif|png|pdf)$/,
         use: 'file-loader?name=[name].[ext]',
         include: path.join(__dirname, 'src/assets')
-      },
+      }
     ]
   },
   devServer: {
@@ -56,7 +56,7 @@ if (process.env.NODE_ENV === 'production') {
   config.plugins.push(
     new webpack.DefinePlugin({
       'process.env': {
-        'NODE_ENV': JSON.stringify("production")
+        NODE_ENV: JSON.stringify('production')
       }
     }),
     new webpack.optimize.UglifyJsPlugin()

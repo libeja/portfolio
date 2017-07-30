@@ -1,15 +1,17 @@
 // cloud styles
 
 @keyframes myanimation {
-    0% { left: -200px }
-    100% { left: 120% }
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 120%;
+  }
 }
 
 .foreground-cloud {
-	position: absolute;
+  position: absolute;
   left: -200px;
-
-	/*animation: myanimation 8s linear;*/
 }
 
 .background-cloud {
@@ -19,8 +21,8 @@
 
 .background-cloud:before,
 .foreground-cloud:before {
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.05); /*fix for bug that left trails
-                                            as cloud moved across the screen*/
+  /*fix for bug that left trails as cloud moved across the screen*/
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.05);
 
   position: absolute;
   font-family: weathericons;

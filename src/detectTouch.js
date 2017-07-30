@@ -3,9 +3,12 @@
 // from http://www.javascriptkit.com/dhtmltutors/sticky-hover-issue-solutions.shtml
 
 window.onload = () => {
-  document.addEventListener('touchstart', function addtouchclass(e) { 
-    document.documentElement.classList.add('can-touch'); 
-    document.removeEventListener('touchstart', addtouchclass, false);
-}, false)
-
-}
+  document.addEventListener(
+    'touchstart',
+    function addtouchclass(e) {
+      document.documentElement.classList.add('can-touch');
+      document.removeEventListener('touchstart', addtouchclass, false);
+    },
+    false
+  );
+};

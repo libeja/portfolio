@@ -4,11 +4,12 @@
   width: 80%;
   max-width: 800px;
   margin: 0 auto;
-  p, li {
+  p,
+  li {
     font-weight: 200;
   }
   h1 {
-    letter-spacing: .2em;    
+    letter-spacing: .2em;
   }
   h3 {
     letter-spacing: .2em;
@@ -30,7 +31,7 @@
 
   .external-link {
     margin-bottom: 10px;
-    font-size: 1em;  
+    font-size: 1em;
   }
 }
 
@@ -38,7 +39,7 @@
   margin: 20px 0;
   width: 80%;
   max-width: 500px;
-  box-shadow: -3px 3px 10px #333;  
+  box-shadow: -3px 3px 10px #333;
   font-size: .9em;
 }
 
@@ -57,8 +58,7 @@
 .user-stories-container {
   max-width: 700px;
   margin: 0 auto;
-  width: 90%; 
-  // text-align: left;
+  width: 90%;
 }
 
 .user-stories {
@@ -67,13 +67,10 @@
 
   li {
     text-align: left;
-    // width: 75%;
     margin: 0 auto 10px auto;
   }
 }
 
 .project-description-section {
   margin: 40px auto 30px auto;
-  // width: 80%;
-  // max-width: 700px;
 }

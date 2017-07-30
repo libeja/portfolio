@@ -15,10 +15,8 @@
   .project-name {
     font-size: 1em;
     height: 30px;
-    // height: 200px;
   }
 }
-
 
 // for individual showcase project
 .project-container {
@@ -42,18 +40,9 @@
   height: 200px;
   background-size: cover;
   background-position: 50%;
-  // transition: all .2s cubic-bezier(.6, 2, .9, 1);
   margin: 0 auto;
   margin-bottom: 15px;
   box-shadow: -3px 3px 10px #333;
-  
-  // &:hover {
-  //   -webkit-transform: scale(1.2);
-  //   -ms-transform: scale(1.2);
-  //   transform: scale(1.2);
-  //   box-shadow: -6px 6px 20px #333;
-  //   background-color: rgba(0, 0, 0, 0)
-  // }
 }
 
 .project-image-container {
@@ -61,7 +50,7 @@
 }
 
 .project-page-overlay {
-  border-radius: 10px;  
+  border-radius: 10px;
   position: absolute;
   opacity: 0;
   transition: all .2s;
@@ -100,7 +89,7 @@
 
 // cancels hover effect on touchscreens
 html.can-touch .project-page-overlay:hover {
-	opacity: 0;
+  opacity: 0;
 }
 
 .project-links {
@@ -111,17 +100,15 @@ html.can-touch .project-page-overlay:hover {
     color: $color-red;
     transition: all .2s ease-in;
     text-decoration: none;
-    // border-bottom: 2px solid $color-red;
-
   }
   a:hover {
-		color: #000;
+    color: #000;
     border-color: #000;
-	}
+  }
 }
 
 .techList {
-  font-style: italic; 
+  font-style: italic;
   font-size: .75em;
   color: $color-purple;
   margin-bottom: 3px;
@@ -138,7 +125,6 @@ html.can-touch .project-page-overlay:hover {
   @extend .projects-container;
 
   margin-top: 30px;
-  
 
   .project-name {
     font-size: .75em;
@@ -156,16 +142,12 @@ html.can-touch .project-page-overlay:hover {
     margin-left: 0;
     margin-right: 0;
   }
-  
+
   .project {
     width: 100px;
     height: 100px;
   }
 }
-
-// .project-name {
-//   font-size: 1.2em;
-// }
 
 .more-projects {
   display: inline-block;
@@ -198,4 +180,3 @@ html.can-touch .project-page-overlay:hover {
   max-height: 0px;
   transition: all 950ms;
 }
-
