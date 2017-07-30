@@ -154,8 +154,7 @@ html.can-touch .sideBar {
   transform: translateY(0%);
 }
 
-// when over 480px
-@media (min-width: 480px) {
+@media (min-width: 501px) {
   .sideBar {
     display: none;
   }
@@ -166,7 +165,7 @@ html.can-touch .sideBar {
     display: inline-block;
   }
 }
-// when over 960px
+
 @media (min-width: 960px) {
   .wide-nav {
     display: inline-block;
