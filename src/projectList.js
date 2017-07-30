@@ -33,7 +33,7 @@ export const showcaseProjects = [
     gitLink: 'https://github.com/libeja/voting-app',
     liveLink: 'https://fcc-voting-booth.herokuapp.com/',
     description:
-      'Full stack application that allows authenticated users to create custom polls that any user can vote on.',
+      'Full stack application that allows authenticated users to create custom polls for any visitor to vote on.',
     longDescription: [
       'This full stack application allows all users to view and vote on all polls posted by registered users. Users must sign up and sign in in order to create a poll. Passport.js was used to implement a local strategy of authentication where a users information was stored in a remote database (MongoDB). Passwords are encrypted using bcrypt before saving into the database.',
       "The results of the polls are visualized as a pie chart using the <a target='_blank' href='http://www.chartjs.org/'>Chart.js</a> library. The front end was built with React. The Rest API was build with Express/Node.js"
@@ -55,7 +55,7 @@ export const showcaseProjects = [
     techList: ['html', 'css', 'javascript', 'react', 'react router', 'mongoDB', 'node', 'express'],
     gitLink: 'https://github.com/libeja/book-trading-club',
     liveLink: 'https://the-book-club.herokuapp.com/',
-    description: 'Full stack app. Trade books with other users. Created custom login and authentication',
+    description: 'Full stack app. Trade books with other users. Created custom login and authentication.',
     longDescription: [
       'This full stack application was written using React, React Router, Express, Node, and MongoDb',
       "Users can see all books in every user's collection and see whether there is a pending trade on that book. If a user is authenticated, the user can request a trade. When the other user accepts the trade, the ownership of the book swithes to the requestee. An authenticated user can view a small dashboard of all incoming and outgoing requests.",
