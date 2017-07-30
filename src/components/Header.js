@@ -8,7 +8,6 @@ import '../styles/clouds.scss';
 // import cloud animations
 import makeClouds from '../clouds';
 
-
 class Header extends Component {
   constructor(props) {
     super(props);
@@ -25,14 +24,14 @@ class Header extends Component {
   onWindowFocus() {
     if (!this.state.windowIsFocused) {
       this.clouds.startClouds();
-      this.setState({ windowIsFocused: true })
+      this.setState({ windowIsFocused: true });
     }
   }
 
   onWindowBlur() {
     if (this.state.windowIsFocused) {
       this.clouds.stopClouds();
-      this.setState({ windowIsFocused: false })
+      this.setState({ windowIsFocused: false });
     }
   }
 
@@ -53,14 +52,17 @@ class Header extends Component {
 
   render() {
     return (
-      <section 
-        ref={headerRef => {this.header = headerRef}}
-        className='header'>
-        <ScrollableAnchor id='home'>
-        <div className="name-container animate">
-          <h1>jayUllman</h1>
-          <h2 className='sub-title'>full stack developer</h2>
-        </div>
+      <section
+        ref={headerRef => {
+          this.header = headerRef;
+        }}
+        className="header"
+      >
+        <ScrollableAnchor id="home">
+          <div className="name-container animate">
+            <h1>jayUllman</h1>
+            <h2 className="sub-title">JavaScript Engineer</h2>
+          </div>
         </ScrollableAnchor>
       </section>
     );
