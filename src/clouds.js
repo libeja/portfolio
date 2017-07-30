@@ -16,7 +16,7 @@ export default sectionRef => {
 
   // function will ensure that too many clouds don't build up when the window is inactive
   const cloudCleanup = () => {
-    let cloudsOnScreen = 0;
+    let cloudsOnScreen;
     setInterval(function() {
       const backgroundClouds = Array.prototype.slice.call(document.querySelectorAll('.background-cloud'));
       const foregroundClouds = Array.prototype.slice.call(document.querySelectorAll('.foreground-cloud'));

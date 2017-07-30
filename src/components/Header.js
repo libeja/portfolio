@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import ScrollableAnchor from 'react-scrollable-anchor';
 
 import '../styles/header.scss';
@@ -11,44 +10,14 @@ import makeClouds from '../clouds';
 class Header extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      windowIsFocused: true
-    };
-
     this.header;
     this.clouds;
-    this.onWindowBlur = this.onWindowBlur.bind(this);
-    this.onWindowFocus = this.onWindowFocus.bind(this);
-  }
-
-  onWindowFocus() {
-    if (!this.state.windowIsFocused) {
-      this.clouds.startClouds();
-      this.setState({ windowIsFocused: true });
-    }
-  }
-
-  onWindowBlur() {
-    if (this.state.windowIsFocused) {
-      this.clouds.stopClouds();
-      this.setState({ windowIsFocused: false });
-    }
   }
 
   componentDidMount() {
     this.clouds = makeClouds(this.header);
-
-    window.addEventListener('blur', this.onWindowBlur);
-    window.addEventListener('focus', this.onWindowFocus);
-
     this.clouds.startClouds();
   }
-
-  // componentWillUnmout() {
-  //   console.log('unmounting');
-  //   window.removeEventListener('blur', this.onWindowBlur);
-  //   window.removeEventListener('focus', this.onWindowFocus);
-  // }
 
   render() {
     return (
