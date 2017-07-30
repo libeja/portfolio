@@ -60,7 +60,7 @@ class Header extends Component {
       >
         <ScrollableAnchor id="home">
           <div className="name-container animate">
-            <h1>jayUllman</h1>
+            <h1>Jay Ullman</h1>
             <h2 className="sub-title">JavaScript Engineer</h2>
           </div>
         </ScrollableAnchor>
