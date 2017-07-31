@@ -29,7 +29,7 @@ const About = () => {
           </a>.
         </p>
         <p>
-          Download my printer-friendly traditional resume{' '}
+          Download my printer-friendly resume{' '}
           <a href="https://github.com/libeja/portfolio/raw/master/src/assets/resume.pdf" download="resume.pdf">
             here
           </a>.
