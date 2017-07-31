@@ -13,9 +13,8 @@ const About = () => {
       </ScrollableAnchor>
       <div className="blurb">
         <p>
-          Hello, my name is Jay. I am an aspiring full stack developer with one year of experience building front end,
-          back end, and full stack web applications. I am based out of Portland, OR in the beautiful and often rainy
-          Pacific Northwest.
+          Hello, my name is Jay. I am a full stack developer with experience building front end, back end, and full
+          stack web applications. I am based out of Portland, OR in the beautiful and often rainy Pacific Northwest.
         </p>
         <p>
           When I'm not taking a deep dive into the inner workings of JavaScript, I enjoy reading fantasy books, watching
