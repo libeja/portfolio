@@ -55,7 +55,8 @@ export const showcaseProjects = [
     techList: ['html', 'css', 'javascript', 'react', 'react router', 'mongoDB', 'node', 'express'],
     gitLink: 'https://github.com/libeja/book-trading-club',
     liveLink: 'https://the-book-club.herokuapp.com/',
-    description: 'Full stack app. Trade books with other users. Created custom login and authentication.',
+    description:
+      "Full stack application allows users to search for books using the Google Books API and add to user's collection, stored in MongoDB.",
     longDescription: [
       'This full stack application was written using React, React Router, Express, Node, and MongoDb',
       "Users can see all books in every user's collection and see whether there is a pending trade on that book. If a user is authenticated, the user can request a trade. When the other user accepts the trade, the ownership of the book swithes to the requestee. An authenticated user can view a small dashboard of all incoming and outgoing requests.",
