@@ -10,10 +10,10 @@ const Footer = () => {
         <h3>&#60; Find me /&#62;</h3>
       </ScrollableAnchor>
       <div className="icons-container">
-        <a href="https://github.com/libeja" target="_blank">
+        <a href="https://github.com/jayullman" target="_blank">
           <i className="fa fa-github-square fa-4x" aria-hidden="true" />
         </a>
-        <a href="https://www.freecodecamp.com/libeja" target="_blank">
+        <a href="https://www.freecodecamp.com/jayullman" target="_blank">
           <i className="fa fa-free-code-camp fa-4x" aria-hidden="true" />
         </a>
         <a href="mailto:jayullman@gmail.com" target="_blank">
@@ -28,7 +28,7 @@ const Footer = () => {
         <br />
         <br />
         View this portolio's source code on{' '}
-        <a target="_blank" href="https://github.com/libeja/portfolio/tree/master/src">
+        <a target="_blank" href="https://github.com/jayullman/portfolio/tree/master/src">
           GitHub&nbsp;
           <i className="fa fa-github" aria-hidden="true" />
         </a>
